@@ -7,7 +7,12 @@ TagManager:
   - Bullet
   - Weapon
   - Ground
+<<<<<<< HEAD
   - Ninja
+=======
+  - Danay
+  - Glenn
+>>>>>>> 721121fb6a73fe8cd1ef008506b5fa9b281a932f
   layers:
   - Default
   - TransparentFX

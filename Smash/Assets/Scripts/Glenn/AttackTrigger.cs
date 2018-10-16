@@ -8,15 +8,15 @@ public class AttackTrigger : MonoBehaviour {
     // Use this for initialization
     private void OnCollisionEnter2D(Collision2D c)
     {
-        if (c.collider.tag == "Player")
+        if (c.collider.tag != "Glenn")
         {
             if (right.GetComponent<BoxCollider2D>().enabled)
             {
-                c.collider.GetComponent<Rigidbody2D>().AddForce(new Vector2(500, 200));
+                c.collider.GetComponent<Rigidbody2D>().AddForce(new Vector2(5000, 2000));
             }
             else
             {
-                c.collider.GetComponent<Rigidbody2D>().AddForce(new Vector2(-500, 200));
+                c.collider.GetComponent<Rigidbody2D>().AddForce(new Vector2(-5000, 2000));
             }
         }
     }
