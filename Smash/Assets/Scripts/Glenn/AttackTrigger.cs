@@ -12,11 +12,11 @@ public class AttackTrigger : MonoBehaviour {
         {
             if (right.GetComponent<BoxCollider2D>().enabled)
             {
-                c.collider.GetComponent<Rigidbody2D>().AddForce(new Vector2(500, 200));
+                c.collider.GetComponent<Rigidbody2D>().AddForce(new Vector2(5000, 200));
             }
             else
             {
-                c.collider.GetComponent<Rigidbody2D>().AddForce(new Vector2(-500, 200));
+                c.collider.GetComponent<Rigidbody2D>().AddForce(new Vector2(-5000, 200));
             }
         }
     }
