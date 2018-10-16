@@ -77,10 +77,10 @@ public class Boomerang : MonoBehaviour {
         
     }
     private void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.gameObject.tag == "Player") {
+        if (collision.gameObject.tag == "Danay") {
             Reset();    // Resets the values
         }
-        if (collision.gameObject.tag != "Player" || collision.gameObject.tag != "Weapon") { // If the boomerang hits something 
+        if (collision.gameObject.tag != "Danay" || collision.gameObject.tag != "Weapon") { // If the boomerang hits something 
             returning = true;   // Is currently returning
             speed *= -1;    // Turns the boomerang around
             rb.velocity = new Vector2(speed, 0);    // Sets the new velocity

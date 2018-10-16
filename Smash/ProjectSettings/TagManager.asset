@@ -7,6 +7,8 @@ TagManager:
   - Ninja
   - Undefined
   - Ground
+  - Weapon
+  - Danay
   layers:
   - Default
   - TransparentFX

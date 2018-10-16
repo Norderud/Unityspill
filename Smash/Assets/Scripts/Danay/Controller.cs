@@ -9,6 +9,7 @@ public class Controller : MonoBehaviour {
     public SpriteRenderer sprite;   // Reference to sprite
     public Boomerang boomerang;     // Reference to boomerang
     public GameObject doubleJumpEffect; // Referance to double jump effect
+    public GameObject hitBox;       // Referance to hitBox
 
 
     public float m_speed = 1000f;   // Movement speed
@@ -33,14 +34,24 @@ public class Controller : MonoBehaviour {
 
     private void Update() {
 
+        hitBox.GetComponent<BoxCollider2D>().enabled = false;
+
+
+        //////////////// ATTACKING
+
         //Resets attack
         if (attackStart > 0 && Time.time - attackStart > attackDuration) {
-            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
             attackStart = 0;
             hasAttacked = 0;
             animator.SetInteger("hasAttacked", hasAttacked);
         }
-
+        if (Input.GetButtonDown("Fire1") && hasAttacked < 3) { // Attack
+            hitBox.GetComponent<BoxCollider2D>().enabled = true;
+            hasAttacked++;
+            attackStart = Time.time;
+            animator.SetInteger("hasAttacked", hasAttacked);
+        }
+        //////////////////////////////
 
         if (Input.GetKeyDown("e") && !boomerang.fire) // Detects input for boomerang skill
         {
@@ -53,21 +64,19 @@ public class Controller : MonoBehaviour {
             horizontal = Input.GetAxis("Horizontal"); // Gets input for horizontal movement
 
         if (horizontal < 0) {   // Player is facing left
+            if (!face)
+                hitBox.transform.position = new Vector2(hitBox.transform.position.x - 2.5f, hitBox.transform.position.y);
             face = true;    // Changes the players direction to left
             flip(face);
+            
         }
         else if (horizontal > 0) {  // Player is facing right
+            if (face)
+                hitBox.transform.position = new Vector2(hitBox.transform.position.x + 2.5f, hitBox.transform.position.y);
             face = false;   // Changes the players direction to right
             flip(face);
-        }
 
-        if (Input.GetButtonDown("Fire1") && hasAttacked < 3) { // Attack
-            hasAttacked++;
-            attackStart = Time.time;
-            animator.SetInteger("hasAttacked", hasAttacked);
-            Debug.Log(hasAttacked);
         }
-
 
         if (Input.GetButtonDown("Jump")) {  // Checks if player jumps
             jump = true;
@@ -119,5 +128,10 @@ public class Controller : MonoBehaviour {
             animator.SetBool("IsGrounded", false);  // Sets the animator parameter to no longer grounded
             hasAirJumped = 1; // Sets the players jump amount variable to 1
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision) {
+
+        
     }
 }
