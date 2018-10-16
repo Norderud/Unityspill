@@ -3,16 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Bullet
-  - Weapon
-  - Ground
-<<<<<<< HEAD
-  - Ninja
-=======
-  - Danay
-  - Glenn
->>>>>>> 721121fb6a73fe8cd1ef008506b5fa9b281a932f
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -22,9 +13,9 @@ TagManager:
   - UI
   - 
   - 
-  - Back
-  - Shuriken
-  - Player
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -47,8 +38,8 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: back
-    uniqueID: 2793940013
+  - name: Back
+    uniqueID: 350698795
     locked: 0
   - name: Default
     uniqueID: 0
