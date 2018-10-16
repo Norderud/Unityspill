@@ -28,7 +28,7 @@ public class Controller : MonoBehaviour {
     //Attack variables
     private int hasAttacked = 0;    
     private float attackStart = 0;
-    private float attackDuration = 1f;
+    private float attackDuration = 0.4f;
 
 
     private Vector3 m_Velocity = Vector3.zero;  // Smooth move
@@ -69,6 +69,7 @@ public class Controller : MonoBehaviour {
             hasAttacked++;
             attackStart = Time.time;
             animator.SetInteger("hasAttacked", hasAttacked);
+            Debug.Log(hasAttacked);
         }
 
 
