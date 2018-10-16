@@ -22,7 +22,7 @@ public class Abilities : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 
         attackTriggerLeft.enabled = false;
         attackTriggerRight.enabled = false;
@@ -77,8 +77,6 @@ public class Abilities : MonoBehaviour {
                 Instantiate(laserR, laserPos, Quaternion.identity);
             }
         }
+
     }
-
-
-
 }

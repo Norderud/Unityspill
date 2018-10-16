@@ -47,11 +47,13 @@ public class Movement : MonoBehaviour {
         {
             sprite.flipX = true;
             ani.SetFloat("Speed", 1);
+            Laser.right = false;
         }
         else if(horizontal > 0)
         {
             sprite.flipX = false;
             ani.SetFloat("Speed",1);
+            Laser.right = true;
         }
         else
         {
@@ -77,11 +79,7 @@ public class Movement : MonoBehaviour {
             rb.AddForce(new Vector2(0, flyForce));
             fuel--;
         }
-
- 
-
     }
-
         void OnCollisionEnter2D(Collision2D col) // check collision
     {
         if (col.collider.tag == "Ground") // resets jump and fly values
@@ -97,7 +95,7 @@ public class Movement : MonoBehaviour {
 
     private void Teleport()
     {
-        // tel = true;
+         tel = true;
         if (Input.GetButtonDown("Fire3") && tel)
         {
             if (sprite.flipX == false)

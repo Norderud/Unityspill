@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 222917261}
   m_Layer: 0
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1624,7 +1624,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1501027283
+  m_SortingLayerID: -1487589361
   m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d7eab72341cc64641a56f2285d62f3fd, type: 3}
@@ -1656,7 +1656,7 @@ GameObject:
   - component: {fileID: 755744746}
   m_Layer: 0
   m_Name: Player (2)
-  m_TagString: Untagged
+  m_TagString: Ninja
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1693,6 +1693,7 @@ MonoBehaviour:
   bullet: {fileID: 1277236468000044, guid: cae6ed42b32690940bb19ee0e02bd5d8, type: 2}
   player: {fileID: 755744748}
   speed: 2000
+  cooldown: 1
 --- !u!114 &755744748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1729,7 +1730,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!58 &755744750
 CircleCollider2D:
@@ -1839,7 +1840,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 755744745}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.1, y: 1.92, z: 0}
+  m_LocalPosition: {x: 4.1, y: -1.06, z: 0}
   m_LocalScale: {x: 12, y: 12, z: 12}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1856,7 +1857,7 @@ GameObject:
   - component: {fileID: 901917545}
   m_Layer: 0
   m_Name: Grid (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1896,7 +1897,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4173092062347560, guid: 6804d6f9052ddf544bf2a9b264d0a3c2, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -8.2
+      value: 1.81
       objectReference: {fileID: 0}
     - target: {fileID: 4173092062347560, guid: 6804d6f9052ddf544bf2a9b264d0a3c2, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1937,6 +1938,10 @@ Prefab:
     - target: {fileID: 4173092062347560, guid: 6804d6f9052ddf544bf2a9b264d0a3c2, type: 2}
       propertyPath: m_LocalScale.z
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046801222536652, guid: 6804d6f9052ddf544bf2a9b264d0a3c2, type: 2}
+      propertyPath: m_TagString
+      value: Glenn
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6804d6f9052ddf544bf2a9b264d0a3c2, type: 2}
