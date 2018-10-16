@@ -113,6 +113,58 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &44849046
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4387130277658022, guid: 639492cb0c896674e9929ec5dd75cb6b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 10.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387130277658022, guid: 639492cb0c896674e9929ec5dd75cb6b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -9.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387130277658022, guid: 639492cb0c896674e9929ec5dd75cb6b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387130277658022, guid: 639492cb0c896674e9929ec5dd75cb6b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387130277658022, guid: 639492cb0c896674e9929ec5dd75cb6b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387130277658022, guid: 639492cb0c896674e9929ec5dd75cb6b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387130277658022, guid: 639492cb0c896674e9929ec5dd75cb6b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387130277658022, guid: 639492cb0c896674e9929ec5dd75cb6b, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114415268287207764, guid: 639492cb0c896674e9929ec5dd75cb6b,
+        type: 2}
+      propertyPath: pRb
+      value: 
+      objectReference: {fileID: 1942875386}
+    - target: {fileID: 114415268287207764, guid: 639492cb0c896674e9929ec5dd75cb6b,
+        type: 2}
+      propertyPath: playerSprite
+      value: 
+      objectReference: {fileID: 1942875387}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 639492cb0c896674e9929ec5dd75cb6b, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &847416498
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,7 +399,7 @@ Transform:
   m_GameObject: {fileID: 1478101082}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.1, y: 1.92, z: 0}
-  m_LocalScale: {x: 12, y: 12, z: 12}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -437,6 +489,12 @@ CircleCollider2D:
   m_Offset: {x: -0.0014867232, y: 0.087656826}
   serializedVersion: 2
   m_Radius: 0.06289653
+--- !u!114 &1542417973 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114415268287207764, guid: 639492cb0c896674e9929ec5dd75cb6b,
+    type: 2}
+  m_PrefabInternal: {fileID: 44849046}
+  m_Script: {fileID: 11500000, guid: a69abc5001a809e4e917fee6ad399a1a, type: 3}
 --- !u!1 &1685362057
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,8 +613,13 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1695583015188878, guid: 1932e45d51468de4381e17ea88d34941, type: 2}
       propertyPath: m_Name
-      value: Player (1)
+      value: Danay
       objectReference: {fileID: 0}
+    - target: {fileID: 114334718001482568, guid: 1932e45d51468de4381e17ea88d34941,
+        type: 2}
+      propertyPath: boomerang
+      value: 
+      objectReference: {fileID: 1542417973}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1932e45d51468de4381e17ea88d34941, type: 2}
   m_IsPrefabAsset: 0
@@ -575,7 +638,7 @@ GameObject:
   - component: {fileID: 1814300819}
   m_Layer: 0
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2010,3 +2073,13 @@ TilemapCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+--- !u!50 &1942875386 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 50138535893842846, guid: 1932e45d51468de4381e17ea88d34941,
+    type: 2}
+  m_PrefabInternal: {fileID: 1713107440}
+--- !u!212 &1942875387 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 212050357843745028, guid: 1932e45d51468de4381e17ea88d34941,
+    type: 2}
+  m_PrefabInternal: {fileID: 1713107440}
