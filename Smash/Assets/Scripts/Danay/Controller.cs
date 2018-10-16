@@ -20,8 +20,6 @@ public class Controller : MonoBehaviour {
     private bool jump = false;      // Is the player about to jump
     public bool doInput = true;     // Determines if it should check for input
 
-    public bool isHitting = false;  // Checks if the player is currently hitting
-
     private int hasAirJumped = 0;   // 0 = grounded / 1 = in the air / 2 = has air jumped
     private float horizontal = 0;   // Detects if player is moving left/right. -1 is left, 1 is right
 
@@ -35,7 +33,9 @@ public class Controller : MonoBehaviour {
 
     private void Update() {
 
+        //Resets attack
         if (attackStart > 0 && Time.time - attackStart > attackDuration) {
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
             attackStart = 0;
             hasAttacked = 0;
             animator.SetInteger("hasAttacked", hasAttacked);
@@ -53,14 +53,10 @@ public class Controller : MonoBehaviour {
             horizontal = Input.GetAxis("Horizontal"); // Gets input for horizontal movement
 
         if (horizontal < 0) {   // Player is facing left
-            if (isHitting)  // If player is attacking, dont move
-                return;
             face = true;    // Changes the players direction to left
             flip(face);
         }
         else if (horizontal > 0) {  // Player is facing right
-            if (isHitting)  // If player is attacking, don't move
-                return;
             face = false;   // Changes the players direction to right
             flip(face);
         }
