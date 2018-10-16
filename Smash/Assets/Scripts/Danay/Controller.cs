@@ -36,7 +36,6 @@ public class Controller : MonoBehaviour {
     private void Update() {
 
         if (attackStart > 0 && Time.time - attackStart > attackDuration) {
-            Debug.Log(animator.GetInteger("hasAttacked"));
             attackStart = 0;
             hasAttacked = 0;
             animator.SetInteger("hasAttacked", hasAttacked);
@@ -68,7 +67,6 @@ public class Controller : MonoBehaviour {
 
         if (Input.GetButtonDown("Fire1") && hasAttacked < 3) { // Attack
             hasAttacked++;
-            Debug.Log("H");
             attackStart = Time.time;
             animator.SetInteger("hasAttacked", hasAttacked);
         }
