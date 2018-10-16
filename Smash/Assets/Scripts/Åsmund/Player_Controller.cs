@@ -37,16 +37,16 @@ public class Player_Controller : MonoBehaviour {
     }
     void HandleMovement(float horizontal, bool jump)
     {
-        velocity = rb.velocity.y;
+         velocity = rb.velocity.y;
         // Moving the rigidbody and animating it
         rb.velocity = new Vector2(speed * horizontal * Time.deltaTime, rb.velocity.y);
         anim.SetFloat("horizontal", Mathf.Abs(horizontal));
         // Jumps if double jump is available
         if (jump && airJumped < 2)
         {
-            rb.velocity = new Vector2(0, 0); // resets the velocity before each jump
-            rb.AddForce(new Vector2(rb.velocity.x, jumpForce));
-            airJumped++;
+          rb.velocity = new Vector2(0, 0); // resets the velocity before each jump
+          rb.AddForce(new Vector2(rb.velocity.x, jumpForce));
+          airJumped++;
         } 
         // flips the animation to face moving direction
         if (horizontal < 0)
