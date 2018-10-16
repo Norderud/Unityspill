@@ -7,6 +7,7 @@ public class Laser : MonoBehaviour {
     public float velX = 5f;
     private float velY = 0;
     private Rigidbody2D rb;
+    public static bool right;
 
 	// Use this for initialization
 	void Start () {
@@ -15,7 +16,7 @@ public class Laser : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 
         rb.velocity = new Vector2(velX,velY);
         Destroy(gameObject, 3f);
@@ -25,9 +26,19 @@ public class Laser : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider && collision.collider.tag == "Player")
+        if (collision.collider && collision.collider.tag != "Glenn")
         {
             Destroy(gameObject, 0f);
+            if (right)
+            {
+                collision.collider.GetComponent<Rigidbody2D>().AddForce(new Vector2(8000,10));
+            }
+            else
+            {
+                collision.collider.GetComponent<Rigidbody2D>().AddForce(new Vector2(-8000, 10));
+            }
+            
+
         }
     }
 }
