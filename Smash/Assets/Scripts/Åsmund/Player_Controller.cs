@@ -20,28 +20,20 @@ public class Player_Controller : MonoBehaviour {
     {
         anim.SetBool("throw", false);
         horizontal = Input.GetAxis("Horizontal");
-        /*
-        if (Input.GetButton("Up"))
-        {
-            pointUp = true;
-        }
-        else
-        {
-            pointUp = false;
-        }*/
         if (Input.GetButtonDown("Jump")) {
             jump = true;
         }
         if (Input.GetButtonDown("Fire1"))
         { 
-            anim.SetBool("throw", true);
-            shuriken.shoot(pointUp);
+            shuriken.shoot();
         }
     }
         private void FixedUpdate()
     {
         HandleMovement(horizontal, jump);
         jump = false;
+        anim.SetFloat("velocity", velocity);
+        
     }
     void HandleMovement(float horizontal, bool jump)
     {
@@ -55,7 +47,6 @@ public class Player_Controller : MonoBehaviour {
             rb.velocity = new Vector2(0, 0); // resets the velocity before each jump
             rb.AddForce(new Vector2(rb.velocity.x, jumpForce));
             airJumped++;
-            grounded = false;
         } 
         // flips the animation to face moving direction
         if (horizontal < 0)
@@ -65,8 +56,7 @@ public class Player_Controller : MonoBehaviour {
         {
             sprite.flipX = false;
         }
-            anim.SetFloat("velocity", velocity);
-            anim.SetBool("grounded", grounded);
+            
 
 
 
@@ -76,5 +66,11 @@ public class Player_Controller : MonoBehaviour {
     {
         grounded = true;
         airJumped = 0;
+        anim.SetBool("grounded", grounded);
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        grounded = false;
+        anim.SetBool("grounded", grounded);
     }
 }
