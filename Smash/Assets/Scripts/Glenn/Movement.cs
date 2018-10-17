@@ -18,7 +18,7 @@ public class Movement : MonoBehaviour {
     public static bool tel;
     private float teleportRange = 250;
 
-
+   
     private float flyForce = 100f;
 
 	// Use this for initialization
@@ -31,6 +31,8 @@ public class Movement : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
         
+
+
         Jump();
         Move();
         Teleport();
@@ -40,7 +42,8 @@ public class Movement : MonoBehaviour {
     private void Move()
     {
         float horizontal = Input.GetAxis("Horizontal");
-       
+
+        
         rb.velocity = new Vector2(horizontal * moveSpeed, rb.velocity.y);
 
         if (horizontal < 0)

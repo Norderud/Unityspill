@@ -6,22 +6,28 @@ public class AttackTrigger : MonoBehaviour {
 
     public GameObject right, left;
 
-  
-    
 
     // Use this for initialization
     private void OnCollisionEnter2D(Collision2D c)
     {
         if (c.collider.tag != "Glenn")
         {
+
+            
+
             if (right.GetComponent<BoxCollider2D>().enabled)
             {
                 c.collider.GetComponent<Rigidbody2D>().AddForce(new Vector2(500f, 800f));
+                c.collider.GetComponent<Controller>().enabled = false;
+            
             }
             else
             {                
                 c.collider.GetComponent<Rigidbody2D>().AddForce(new Vector2(-500f, 800f));           
             }
         }
+
     }
+
+   
 }
