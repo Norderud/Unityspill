@@ -129,9 +129,4 @@ public class Controller : MonoBehaviour {
             hasAirJumped = 1; // Sets the players jump amount variable to 1
         }
     }
-
-    private void OnTriggerEnter2D(Collider2D collision) {
-
-        
-    }
 }
