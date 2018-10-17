@@ -67,7 +67,7 @@ public class Abilities : MonoBehaviour {
             laserPos = player.position;
             if (sprite.flipX == true)
             {
-                laserL.GetComponent<SpriteRenderer>().flipX = true; // flips the laser.
+                laserL.GetComponent<SpriteRenderer>().flipX = true;
                 laserPos += new Vector2(-1f, 0.5f );
                 Instantiate(laserL,laserPos,Quaternion.identity);              
             }

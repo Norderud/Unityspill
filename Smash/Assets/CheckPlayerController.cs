@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CheckMovement : MonoBehaviour {
+public class CheckPlayerController : MonoBehaviour {
 
-    public Movement script;
+    public Player_Controller script;
     private float timer = 50f;
 	// Use this for initialization
 	void Start () {
@@ -13,7 +13,6 @@ public class CheckMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
         if (script.enabled == false && timer > 0)
         {
             timer--;
@@ -23,5 +22,5 @@ public class CheckMovement : MonoBehaviour {
             script.enabled = true;
             timer = 50f;
         }
-	}
+    }
 }
