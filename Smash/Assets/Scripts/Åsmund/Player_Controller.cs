@@ -25,22 +25,15 @@ public class Player_Controller : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-<<<<<<< HEAD
         horizontal = Input.GetAxis("Horizontal");
         if (Input.GetButtonDown("Jump")) {
             jump = true;
         }
-=======
         anim.SetBool("throw", false);
         horizontal = Input.GetAxis("Horizontal"+ player);
         if (Input.GetButtonDown("Jump"+ player)) {
             jump = true;
         }
-        if (Input.GetButtonDown("Fire1"+player))
-        { 
-            shuriken.shoot();
-        }
->>>>>>> ac3bd6a7346095e08595019724574ac552d59844
     }
         private void FixedUpdate()
     {
