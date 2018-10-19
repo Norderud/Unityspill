@@ -29,7 +29,6 @@ public class Player_Controller : MonoBehaviour {
         if (Input.GetButtonDown("Jump")) {
             jump = true;
         }
-        anim.SetBool("throw", false);
         horizontal = Input.GetAxis("Horizontal"+ player);
         if (Input.GetButtonDown("Jump"+ player)) {
             jump = true;

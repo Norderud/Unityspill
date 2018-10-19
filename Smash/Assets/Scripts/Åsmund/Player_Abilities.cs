@@ -12,7 +12,7 @@ public class Player_Abilities : MonoBehaviour
 
     private void Update()
     {
-        //player.anim.SetBool("throw", false);
+        player.anim.SetBool("throw", false);
         if (Input.GetButtonDown("Fire1"))
         {
             shoot();
@@ -31,7 +31,6 @@ public class Player_Abilities : MonoBehaviour
             facing = 1;
         }
         player.anim.SetBool("throw", true);
-        Debug.Log("wtf");
         Vector2 startPos = new Vector2(player.GetComponent<Rigidbody2D>().position.x + (1.5f * facing), player.GetComponent<Rigidbody2D>().position.y);
         GameObject b = Instantiate(bullet, startPos, Quaternion.identity) as GameObject;
         b.GetComponent<Rigidbody2D>().AddForce(new Vector2(speed*facing, 0));

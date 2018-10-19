@@ -2,10 +2,10 @@
 
 public class Shuriken : MonoBehaviour {
     private Rigidbody2D rb;
+    public Animator anim;
     void Start()
-    { 
+    {
         rb = GetComponent<Rigidbody2D>();
-        Debug.Log(rb.ToString());
     }
     private void FixedUpdate()
     {
