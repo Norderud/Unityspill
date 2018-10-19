@@ -443,7 +443,7 @@ MonoBehaviour:
   animator: {fileID: 95234411539322332}
   coolDown: 0
   startDashTime: 0.2
-  dashSpeed: 120
+  dashSpeed: 80
   dashEffect: {fileID: 1630286225854680, guid: 6b582e88db03c2f48b8430c090558340, type: 2}
 --- !u!114 &114774917777955908
 MonoBehaviour:

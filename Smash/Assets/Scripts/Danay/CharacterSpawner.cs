@@ -8,8 +8,9 @@ public class CharacterSpawner : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        int charInd = PlayerPrefs.GetInt("SelectedCharacter");
-        Instantiate(players[charInd], Vector2.zero, Quaternion.identity);
+        int charIndex = PlayerPrefs.GetInt("SelectedCharacter");
+        if (players != null)
+            Instantiate(players[charIndex], Vector2.zero, Quaternion.identity);
     }
 
 }
