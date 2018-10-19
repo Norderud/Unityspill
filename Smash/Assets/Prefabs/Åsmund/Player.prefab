@@ -141,7 +141,13 @@ MonoBehaviour:
   speed: 1500
   anim: {fileID: 95590165488370980}
   sprite: {fileID: 212256999706671548}
+<<<<<<< HEAD
 --- !u!114 &114172894593141940
+=======
+  shuriken: {fileID: 114305509855570804}
+  player: 
+--- !u!114 &114305509855570804
+>>>>>>> ac3bd6a7346095e08595019724574ac552d59844
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}

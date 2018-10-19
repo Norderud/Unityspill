@@ -11,6 +11,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Prefabs/TEst.unity
     guid: a8fe865b18aefb9489073d310599f00b
+<<<<<<< HEAD
   - enabled: 0
     path: Assets/Scenes/Danay.unity
     guid: 998d975864408c74ca1c64e127abf44e
@@ -20,4 +21,15 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/\xC5smund.unity"
     guid: f1b674850ea255e4abe1335a7e1be38a
+=======
+  - enabled: 1
+    path: Assets/Scenes/CharacterSelect.unity
+    guid: d44ffa5bb858446488db96f45b8dc88e
+  - enabled: 1
+    path: Assets/Scenes/Danay.unity
+    guid: 998d975864408c74ca1c64e127abf44e
+  - enabled: 1
+    path: Assets/Scenes/Glenn.unity
+    guid: d6c1779d0dd7ff843844eb56368c5105
+>>>>>>> ac3bd6a7346095e08595019724574ac552d59844
   m_configObjects: {}

@@ -9,11 +9,14 @@ public class Movement : MonoBehaviour {
     public Transform player;
     private Rigidbody2D rb;
     public Animator ani;
-    
+
+    public string wPlayer;           // Referance to if the character is player1 or player2
+
     private int moveSpeed = 15;
     private int fuel = 100;
     private float jumpforce = 1000;
     private bool jump = true;
+    private bool isGrounded = true;
 
     public static bool tel;
     private float teleportRange = 250;
@@ -24,15 +27,14 @@ public class Movement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         rb = GetComponent<Rigidbody2D>();
-     
-       
+        if (PlayerPrefs.GetString("Player2tag") == "Glenn") {
+            wPlayer = "-2";
+        }
     }
 	
 	// Update is called once per frame
 	void FixedUpdate () {
         
-
-
         Jump();
         Move();
         Teleport();
@@ -41,7 +43,7 @@ public class Movement : MonoBehaviour {
     
     private void Move()
     {
-        float horizontal = Input.GetAxis("Horizontal");
+        float horizontal = Input.GetAxis("Horizontal"+ wPlayer);
 
         
         rb.velocity = new Vector2(horizontal * moveSpeed, rb.velocity.y);
@@ -67,20 +69,20 @@ public class Movement : MonoBehaviour {
 
     private void Jump() {
 
-        if (Input.GetButton("Jump") && fuel > 0 && player.position.y <= 10)
+        if (Input.GetButton("Jump"+ wPlayer) && fuel > 0 && player.position.y <= 10)
         {
 
             if (jump == true)
             {
                 rb.AddForce(new Vector2(0, jumpforce));
-                jump = false;
-              
+                jump = false;              
             }
             ani.SetBool("Jump", true);
             ani.SetBool("IsGrounded", false);
 
             rb.AddForce(new Vector2(0, flyForce));
             fuel--;
+            isGrounded = false;
         }
     }
         void OnCollisionEnter2D(Collision2D col) // check collision
@@ -92,14 +94,24 @@ public class Movement : MonoBehaviour {
             fuel = 100;
             jump = true;
             tel = true;
+            isGrounded = true;
            
         }
     }
 
+    void OnCollisionExit2D(Collision2D col)
+    {
+        if (col.collider.tag == "Ground")
+        {
+            isGrounded = false;
+        }
+    }
+
+
     private void Teleport()
     {
-         tel = true;
-        if (Input.GetButtonDown("Fire3") && tel)
+     
+        if (Input.GetButtonDown("Fire3"+ wPlayer) &&  isGrounded )
         {
             if (sprite.flipX == false)
             {

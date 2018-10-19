@@ -464,6 +464,7 @@ MonoBehaviour:
   doubleJumpEffect: {fileID: 1923503539022624, guid: 034c9870130ffb34b900d77b630bdd59,
     type: 2}
   hitBox: {fileID: 1893156920021354}
+  player: 
   m_speed: 1200
   m_smooth: 0.02
   m_jump: 1500

@@ -8,7 +8,8 @@ public class Abilities : MonoBehaviour {
     public Transform player;
     public GameObject laserR, laserL;
     private Vector2 laserPos;
-    
+
+    public string wPlayer;           // Referance to if the character is player1 or player2
 
     public Collider2D attackTriggerRight, attackTriggerLeft;
 
@@ -18,8 +19,10 @@ public class Abilities : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        
-	}
+        if (PlayerPrefs.GetString("Player2tag") == "Glenn"){
+            wPlayer = "-2";
+        }
+    }
 	
 	// Update is called once per frame
 	void FixedUpdate () {
@@ -35,7 +38,7 @@ public class Abilities : MonoBehaviour {
     private void Kick()
     {
         ani.SetBool("Kick", false);
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1"+ wPlayer))
         {
             if (sprite.flipX == false)
             {
@@ -59,7 +62,7 @@ public class Abilities : MonoBehaviour {
 
         ani.SetBool("Shoot", false);
 
-        if (Input.GetButtonDown("Fire2") && Time.time > nextFire)
+        if (Input.GetButtonDown("Fire2"+ wPlayer) && Time.time > nextFire)
         {
             ani.SetBool("Shoot", true);
             ani.SetBool("Jump", false);
