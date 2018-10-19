@@ -10,6 +10,9 @@ public class SettingsMenu : MonoBehaviour {
 
     Resolution[] resolutions;
 
+    public GameObject pauseMenuUi;
+    public GameObject SettingsMenuUi;
+
     public Dropdown resolutionDropdown;
     public AudioMixer audioMixer;
 
@@ -57,6 +60,7 @@ public class SettingsMenu : MonoBehaviour {
 
     public void Ok()
     {
-       
+        pauseMenuUi.SetActive(true);
+        SettingsMenuUi.SetActive(false);
     }
 }
