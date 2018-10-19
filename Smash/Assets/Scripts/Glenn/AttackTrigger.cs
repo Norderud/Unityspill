@@ -22,8 +22,10 @@ public class AttackTrigger : MonoBehaviour {
                 {
                     c.collider.GetComponent<Player_Controller>().enabled = false; // sets åsmunds movementscript to false
                 }
+
                 c.collider.GetComponent<Rigidbody2D>().AddForce(new Vector2(500f, 800f)); // add force to enemy player
             }
+
             else // if player is facing left
             {                               
                 if (c.collider.tag == "Danay")
@@ -34,6 +36,7 @@ public class AttackTrigger : MonoBehaviour {
                 {
                     c.collider.GetComponent<Player_Controller>().enabled = false; // sets åsmunds movementscript to false
                 }
+
                 c.collider.GetComponent<Rigidbody2D>().AddForce(new Vector2(-500f, 800f)); // add force to enemy player
             }
 

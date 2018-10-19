@@ -9,6 +9,8 @@ TagManager:
   - Glenn
   - Danay
   - "\xC5smund"
+  - Weapon
+  - Bullets
   layers:
   - Default
   - TransparentFX
