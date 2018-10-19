@@ -22,14 +22,13 @@ GameObject:
   - component: {fileID: 212256999706671548}
   - component: {fileID: 61301379598014818}
   - component: {fileID: 58697935450871332}
-  - component: {fileID: 58114055569250832}
   - component: {fileID: 50279747032716502}
   - component: {fileID: 114064980643664108}
-  - component: {fileID: 114305509855570804}
   - component: {fileID: 95590165488370980}
+  - component: {fileID: 114172894593141940}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Ninja
+  m_TagString: "\xC5smund"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41,8 +40,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1863098814378420}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.1, y: 1.92, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalPosition: {x: -8.57, y: -1.26, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -67,7 +66,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!58 &58114055569250832
+--- !u!58 &58697935450871332
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -79,24 +78,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0014867232, y: 0.087656826}
+  m_Offset: {x: 0.040042818, y: -0.38447672}
   serializedVersion: 2
-  m_Radius: 0.06289653
---- !u!58 &58697935450871332
-CircleCollider2D:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1863098814378420}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 1
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.0028251787, y: -0.09500002}
-  serializedVersion: 2
-  m_Radius: 0.07159794
+  m_Radius: 0.15049046
 --- !u!61 &61301379598014818
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -109,18 +93,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0029173158, y: -0.046864122}
+  m_Offset: {x: 0.039771408, y: 0.08508298}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.19, y: 0.34}
-    newSize: {x: 0.33, y: 0.32}
+    oldSize: {x: 0.95, y: 1.16}
+    newSize: {x: 0.95, y: 1.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.14900768, y: 0.14790219}
+  m_Size: {x: 0.29694206, y: 0.9861539}
   m_EdgeRadius: 0
 --- !u!95 &95590165488370980
 Animator:
@@ -153,12 +137,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontal: 0
   rb: {fileID: 50279747032716502}
-  jumpForce: 1000
-  speed: 1000
+  jumpForce: 1500
+  speed: 1500
   anim: {fileID: 95590165488370980}
   sprite: {fileID: 212256999706671548}
-  shuriken: {fileID: 114305509855570804}
---- !u!114 &114305509855570804
+--- !u!114 &114172894593141940
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -166,7 +149,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1863098814378420}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d75bdb0e7dba0340a4c57b441a6682a, type: 3}
+  m_Script: {fileID: 11500000, guid: c074b1ad301140b438e6079d06246f8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 1277236468000044, guid: cae6ed42b32690940bb19ee0e02bd5d8, type: 2}
@@ -208,12 +191,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e9642b8143c3beb4faf20df26fe579ae, type: 3}
+  m_Sprite: {fileID: 21300062, guid: 3e3be135f4ff9694c9addcc295d34f25, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.33, y: 0.32}
+  m_Size: {x: 0.95, y: 1.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
