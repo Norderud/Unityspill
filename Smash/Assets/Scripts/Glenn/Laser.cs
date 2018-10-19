@@ -36,9 +36,7 @@ public class Laser : MonoBehaviour {
             else
             {
                 collision.collider.GetComponent<Rigidbody2D>().AddForce(new Vector2(-8000, 10));
-            }
-            
-
+            }            
         }
     }
 }
