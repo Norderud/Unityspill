@@ -7,8 +7,10 @@ public class PauseMenu : MonoBehaviour {
 
     // Use this for initialization
     public static bool GameIsPaused = false;
+    
 
     public GameObject pauseMenuUi;
+    public GameObject SettingsMenuUi;
 	
 	// Update is called once per frame
 	void Update () {
@@ -40,12 +42,15 @@ public class PauseMenu : MonoBehaviour {
     }
 
     public void LoadSettings()
+
     {
-        Debug.Log("Settings");
+        pauseMenuUi.SetActive(false);
+        SettingsMenuUi.SetActive(true);
     }
 
     public void LoadMenu()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("CharacterSelect");
     }
 
