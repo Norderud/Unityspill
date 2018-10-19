@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Prefabs/TEst.unity
     guid: a8fe865b18aefb9489073d310599f00b
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/CharacterSelect.unity
     guid: d44ffa5bb858446488db96f45b8dc88e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Danay.unity
     guid: 998d975864408c74ca1c64e127abf44e
   - enabled: 1

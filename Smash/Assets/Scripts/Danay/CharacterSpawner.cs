@@ -18,5 +18,4 @@ public class CharacterSpawner : MonoBehaviour {
             Instantiate(players[player2], Vector2.zero, Quaternion.identity);
         }
     }
-
 }

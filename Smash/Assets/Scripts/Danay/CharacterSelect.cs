@@ -10,15 +10,35 @@ public class CharacterSelect : MonoBehaviour {
 
     private int playerSelect = 0;
 
-	public void ChooseCharacter(int charIndex) {
-        if (playerSelect > 1) return;
-        PlayerPrefs.SetInt("Player" + (playerSelect+1), charIndex);
-        print("Player" + (playerSelect + 1));
-        playerSelect++;
-        if (playerSelect == 1)
-            title.text = "Player 2";
+    private void Start()
+    {
+        // Resets playerprefs
+        PlayerPrefs.DeleteKey("Player1");
+        PlayerPrefs.DeleteKey("Player2");
     }
 
+    public void ChooseCharacter(int charIndex) {
+        // Limitations
+        if (playerSelect != 0 && 
+                PlayerPrefs.GetInt("Player" + (playerSelect)) == charIndex) return;
+        if (playerSelect > 1) return;
+
+        PlayerPrefs.SetInt("Player" + (playerSelect+1), charIndex); // Player pref variable for player1/player2
+        playerSelect++; //Next player
+        if (playerSelect < 2)
+            title.text = "Player " + (playerSelect + 1) + " - Choose your character";
+        else if (playerSelect == 2) // All players have chosen
+            title.text = "Press start to play";
+    }
+
+    // Goes back once in character select screen
+    public void Back() {
+        if (playerSelect < 1) return;   //Limitation
+        playerSelect--;
+        title.text = "Player " + (playerSelect + 1) + " - Choose your character";
+    }
+
+    // Loads the game scene
     public void LoadScene() {
         SceneManager.LoadScene("Danay");
     }
