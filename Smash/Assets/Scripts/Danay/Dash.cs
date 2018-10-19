@@ -29,7 +29,7 @@ public class Dash : MonoBehaviour {
         if (!isDashing) {   //Dashes if dash is ready
             if (controls.grounded)
                 hasDashed = false;
-            if (Input.GetButtonDown("Fire2") && coolDownTimer < Time.time && !hasDashed) { //Checks if button is clicked and cooldown is ready
+            if (Input.GetButtonDown("Fire2"+controls.player) && coolDownTimer < Time.time && !hasDashed) { //Checks if button is clicked and cooldown is ready
                 isDashing = true;
                 hasDashed = true;
                 animator.SetBool("IsDashing", true);    // dash animation

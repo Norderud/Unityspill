@@ -11,6 +11,8 @@ public class Controller : MonoBehaviour {
     public GameObject doubleJumpEffect; // Referance to double jump effect
     public GameObject hitBox;       // Referance to hitBox
 
+    public string player;           // Referance to if the character is player1 or player2
+
 
     public float m_speed = 1000f;   // Movement speed
     public float m_smooth = .05f;   // Smooth movement
@@ -32,11 +34,16 @@ public class Controller : MonoBehaviour {
 
     private Vector3 m_Velocity = Vector3.zero;  // Smooth move
 
+    void Start() {
+        if (PlayerPrefs.GetString("Player2tag") == "Danay") {
+            player = "-2";
+        }
+    }
+
+
     private void Update() {
 
         hitBox.GetComponent<BoxCollider2D>().enabled = false;
-
-
         //////////////// ATTACKING
 
         //Resets attack
@@ -45,7 +52,7 @@ public class Controller : MonoBehaviour {
             hasAttacked = 0;
             animator.SetInteger("hasAttacked", hasAttacked);
         }
-        if (Input.GetButtonDown("Fire1") && hasAttacked < 3) { // Attack
+        if (Input.GetButtonDown("Fire1"+player) && hasAttacked < 3) { // Attack
             hitBox.GetComponent<BoxCollider2D>().enabled = true;
             hasAttacked++;
             attackStart = Time.time;
@@ -53,7 +60,7 @@ public class Controller : MonoBehaviour {
         }
         //////////////////////////////
 
-        if (Input.GetKeyDown("e") && !boomerang.fire) // Detects input for boomerang skill
+        if (Input.GetButtonDown("Fire3"+player) && !boomerang.fire) // Detects input for boomerang skill
         {
             boomerang.Shoot();  // Starts the boomerang update script
             boomerang.GetComponent<Renderer>().enabled = false; // Renders the boomerang
@@ -61,7 +68,7 @@ public class Controller : MonoBehaviour {
         }
 
         if (doInput) // If detecting input is active, detects left/right input
-            horizontal = Input.GetAxis("Horizontal"); // Gets input for horizontal movement
+            horizontal = Input.GetAxis("Horizontal"+player); // Gets input for horizontal movement
 
         if (horizontal < 0) {   // Player is facing left
             if (!face)
@@ -78,7 +85,7 @@ public class Controller : MonoBehaviour {
 
         }
 
-        if (Input.GetButtonDown("Jump")) {  // Checks if player jumps
+        if (Input.GetButtonDown("Jump"+player)) {  // Checks if player jumps
             jump = true;
             animator.SetBool("IsGrounded", false); // Sets the animator parameter
         }

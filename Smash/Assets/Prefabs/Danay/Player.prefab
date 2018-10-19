@@ -28,7 +28,7 @@ GameObject:
   - component: {fileID: 114261250710278710}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Danay
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -340,13 +340,14 @@ MonoBehaviour:
   boomerang: {fileID: 0}
   doubleJumpEffect: {fileID: 1923503539022624, guid: 034c9870130ffb34b900d77b630bdd59,
     type: 2}
+  hitBox: {fileID: 0}
+  player: 
   m_speed: 1200
   m_smooth: 0.02
   m_jump: 1800
   face: 0
   grounded: 1
   doInput: 1
-  isHitting: 0
 --- !u!212 &212050357843745028
 SpriteRenderer:
   m_ObjectHideFlags: 1

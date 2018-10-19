@@ -29,7 +29,7 @@ GameObject:
   - component: {fileID: 95590165488370980}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Ninja
+  m_TagString: "\xC5smund"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -158,6 +158,7 @@ MonoBehaviour:
   anim: {fileID: 95590165488370980}
   sprite: {fileID: 212256999706671548}
   shuriken: {fileID: 114305509855570804}
+  player: 
 --- !u!114 &114305509855570804
 MonoBehaviour:
   m_ObjectHideFlags: 1

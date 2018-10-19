@@ -15,15 +15,23 @@ public class Player_Controller : MonoBehaviour {
     public SpriteRenderer sprite;
     public Shuriken shuriken;
 
+    public string player;           // Reference to if the character is player1 or player2
+
+
+    private void Start() {
+        if (PlayerPrefs.GetString("Player2tag") == "Åsmund")
+            player = "-2";
+    }
+
     // Update is called once per frame
     void Update()
     {
         anim.SetBool("throw", false);
-        horizontal = Input.GetAxis("Horizontal");
-        if (Input.GetButtonDown("Jump")) {
+        horizontal = Input.GetAxis("Horizontal"+ player);
+        if (Input.GetButtonDown("Jump"+ player)) {
             jump = true;
         }
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1"+player))
         { 
             shuriken.shoot();
         }
