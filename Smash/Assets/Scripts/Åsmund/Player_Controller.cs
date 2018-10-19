@@ -16,7 +16,6 @@ public class Player_Controller : MonoBehaviour {
 
     public string player;           // Reference to if the character is player1 or player2
 
-
     private void Start() {
         if (PlayerPrefs.GetString("Player2tag") == "Åsmund")
             player = "-2";
@@ -26,7 +25,7 @@ public class Player_Controller : MonoBehaviour {
     void Update()
     {
         horizontal = Input.GetAxis("Horizontal");
-        if (Input.GetButtonDown("Jump")) {
+        if (Input.GetButtonDown("Jump"+player)) {
             jump = true;
         }
         horizontal = Input.GetAxis("Horizontal"+ player);

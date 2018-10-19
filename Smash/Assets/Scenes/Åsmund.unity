@@ -113,48 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &375371982
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4173092062347560, guid: 6804d6f9052ddf544bf2a9b264d0a3c2, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 3.17
-      objectReference: {fileID: 0}
-    - target: {fileID: 4173092062347560, guid: 6804d6f9052ddf544bf2a9b264d0a3c2, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -1.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4173092062347560, guid: 6804d6f9052ddf544bf2a9b264d0a3c2, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4173092062347560, guid: 6804d6f9052ddf544bf2a9b264d0a3c2, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4173092062347560, guid: 6804d6f9052ddf544bf2a9b264d0a3c2, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4173092062347560, guid: 6804d6f9052ddf544bf2a9b264d0a3c2, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4173092062347560, guid: 6804d6f9052ddf544bf2a9b264d0a3c2, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4173092062347560, guid: 6804d6f9052ddf544bf2a9b264d0a3c2, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6804d6f9052ddf544bf2a9b264d0a3c2, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1 &847416498
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,7 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 847416499}
   - component: {fileID: 847416500}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -362,7 +320,7 @@ GameObject:
   - component: {fileID: 1814300821}
   - component: {fileID: 1814300820}
   - component: {fileID: 1814300819}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tilemap
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1837,49 +1795,3 @@ TilemapCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
---- !u!1001 &1892471295
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4867434086546716, guid: c9f1238307e2b0c418c26a48d28487de, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -8.57
-      objectReference: {fileID: 0}
-    - target: {fileID: 4867434086546716, guid: c9f1238307e2b0c418c26a48d28487de, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -1.26
-      objectReference: {fileID: 0}
-    - target: {fileID: 4867434086546716, guid: c9f1238307e2b0c418c26a48d28487de, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4867434086546716, guid: c9f1238307e2b0c418c26a48d28487de, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4867434086546716, guid: c9f1238307e2b0c418c26a48d28487de, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4867434086546716, guid: c9f1238307e2b0c418c26a48d28487de, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4867434086546716, guid: c9f1238307e2b0c418c26a48d28487de, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4867434086546716, guid: c9f1238307e2b0c418c26a48d28487de, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1904001260556660, guid: c9f1238307e2b0c418c26a48d28487de, type: 2}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c9f1238307e2b0c418c26a48d28487de, type: 2}
-  m_IsPrefabAsset: 0
