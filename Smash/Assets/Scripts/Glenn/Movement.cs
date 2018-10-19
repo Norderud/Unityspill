@@ -102,7 +102,7 @@ public class Movement : MonoBehaviour {
 
     private void Teleport()
     {
-         tel = true;
+        tel = true;
         if (Input.GetButtonDown("Fire3"+ wPlayer) && tel)
         {
             if (sprite.flipX == false)
