@@ -111,7 +111,7 @@ public class Controller : MonoBehaviour {
         if (jump && hasAirJumped < 2) { // Jumps
             grounded = false;   // Player is no longer grounded
             hasAirJumped++;     // Increments the number of jumps
-            jump = false;   
+            jump = false;       
             rb.velocity = new Vector2(rb.velocity.x, 0f);   // Sets the velocity for the jump
             rb.AddForce(new Vector2(0f, m_jump));
             if (hasAirJumped > 1) {
