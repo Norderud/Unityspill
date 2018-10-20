@@ -40,6 +40,7 @@ public class CharacterSelect : MonoBehaviour {
 
     // Loads the game scene
     public void LoadScene() {
-        SceneManager.LoadScene("Danay");
+        if (playerSelect == 2)
+            SceneManager.LoadScene("Danay");
     }
 }
