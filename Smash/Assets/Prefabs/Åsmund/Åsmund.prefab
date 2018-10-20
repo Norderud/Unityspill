@@ -27,7 +27,11 @@ GameObject:
   - component: {fileID: 95671521373204100}
   - component: {fileID: 114681327419640102}
   m_Layer: 0
+<<<<<<< HEAD:Smash/Assets/Prefabs/Åsmund/Åsmund.prefab
   m_Name: "\xC5smund"
+=======
+  m_Name: Player
+>>>>>>> 09a207d847c0d2bf55be1cb124d26d3bc47cb1fb:Smash/Assets/Prefabs/Åsmund/Player.prefab
   m_TagString: "\xC5smund"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
