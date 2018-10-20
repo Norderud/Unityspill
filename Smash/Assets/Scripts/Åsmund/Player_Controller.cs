@@ -3,7 +3,7 @@
 
 public class Player_Controller : MonoBehaviour {
 
-    private bool jump, grounded, pointUp;
+    private bool jump, pointUp;
     private int airJumped = 0;
     private float velocity;
 
@@ -71,13 +71,17 @@ public class Player_Controller : MonoBehaviour {
     // For detecting when on ground and not
     private void OnCollisionExit2D(Collision2D collision)
     {
-        grounded = false;
-        anim.SetBool("grounded", grounded);
+        if (collision.gameObject.tag == "Ground")
+        {
+            anim.SetBool("grounded", false);
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        grounded = true;
-        airJumped = 0;
-        anim.SetBool("grounded", grounded);
+        if (collision.gameObject.tag == "Ground")
+        {
+            airJumped = 0;
+            anim.SetBool("grounded", true);
+        }
     }
 }
