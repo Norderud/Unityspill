@@ -20,7 +20,6 @@ public class Shuriken : MonoBehaviour {
         if(collision.collider.tag != "Åsmund")
         {
             Destroy(Instantiate(blood, gameObject.transform.position, Quaternion.identity), 1f);
-            
             Destroy(gameObject, 0);
         }
     }
