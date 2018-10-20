@@ -46,11 +46,16 @@ public class Player_Controller : MonoBehaviour {
         // Moving the rigidbody and animating it
         rb.velocity = new Vector2(speed * horizontal * Time.deltaTime, rb.velocity.y);
         anim.SetFloat("horizontal", Mathf.Abs(horizontal));
+        anim.SetBool("djump", false);
         // Jumps if double jump is available
         if (jump && airJumped < 2)
         {
           rb.velocity = new Vector2(0, 0); // resets the velocity before each jump
           rb.AddForce(new Vector2(rb.velocity.x, jumpForce));
+          if(airJumped== 1)
+            {
+                anim.SetBool("djump", true);
+            }
           airJumped++;
         }
         // flips the animation to face moving direction
