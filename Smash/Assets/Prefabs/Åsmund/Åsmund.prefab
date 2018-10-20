@@ -9,54 +9,50 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1904001260556660}
+  m_RootGameObject: {fileID: 1721220877765840}
   m_IsPrefabAsset: 1
---- !u!1 &1904001260556660
+--- !u!1 &1721220877765840
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4867434086546716}
-  - component: {fileID: 212130527579412458}
-  - component: {fileID: 61889400011890704}
-  - component: {fileID: 58356142075025292}
-  - component: {fileID: 50380918498893534}
-  - component: {fileID: 114688540151697640}
-  - component: {fileID: 95671521373204100}
-  - component: {fileID: 114681327419640102}
+  - component: {fileID: 4872709092997882}
+  - component: {fileID: 212528801024843808}
+  - component: {fileID: 61239318156501122}
+  - component: {fileID: 58249153191262918}
+  - component: {fileID: 50480038367706380}
+  - component: {fileID: 114361795137600058}
+  - component: {fileID: 95094106016530176}
+  - component: {fileID: 114552410161315632}
   m_Layer: 0
-<<<<<<< HEAD:Smash/Assets/Prefabs/Åsmund/Åsmund.prefab
-  m_Name: "\xC5smund"
-=======
-  m_Name: Player
->>>>>>> 09a207d847c0d2bf55be1cb124d26d3bc47cb1fb:Smash/Assets/Prefabs/Åsmund/Player.prefab
+  m_Name: "\xC5smund 1"
   m_TagString: "\xC5smund"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4867434086546716
+--- !u!4 &4872709092997882
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1904001260556660}
+  m_GameObject: {fileID: 1721220877765840}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.57, y: -1.26, z: 0}
+  m_LocalPosition: {x: -3.5867848, y: 6.665026, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50380918498893534
+--- !u!50 &50480038367706380
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1904001260556660}
+  m_GameObject: {fileID: 1721220877765840}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -70,12 +66,12 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!58 &58356142075025292
+--- !u!58 &58249153191262918
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1904001260556660}
+  m_GameObject: {fileID: 1721220877765840}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -85,12 +81,12 @@ CircleCollider2D:
   m_Offset: {x: 0.040042818, y: -0.38447672}
   serializedVersion: 2
   m_Radius: 0.15049046
---- !u!61 &61889400011890704
+--- !u!61 &61239318156501122
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1904001260556660}
+  m_GameObject: {fileID: 1721220877765840}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -110,13 +106,13 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.29694206, y: 0.9861539}
   m_EdgeRadius: 0
---- !u!95 &95671521373204100
+--- !u!95 &95094106016530176
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1904001260556660}
+  m_GameObject: {fileID: 1721220877765840}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 05e3ad9edb69e6c4b9f565d445aba487, type: 2}
@@ -128,45 +124,45 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114681327419640102
+--- !u!114 &114361795137600058
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1904001260556660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c074b1ad301140b438e6079d06246f8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullet: {fileID: 1277236468000044, guid: cae6ed42b32690940bb19ee0e02bd5d8, type: 2}
-  player: {fileID: 114688540151697640}
-  speed: 3000
-  cooldown: 0.5
---- !u!114 &114688540151697640
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1904001260556660}
+  m_GameObject: {fileID: 1721220877765840}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 243615ab6f80d2a4eb54abed7b51c0d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   horizontal: 0
-  rb: {fileID: 50380918498893534}
+  rb: {fileID: 50480038367706380}
   jumpForce: 1500
   speed: 1500
-  anim: {fileID: 95671521373204100}
-  sprite: {fileID: 212130527579412458}
+  anim: {fileID: 95094106016530176}
+  sprite: {fileID: 212528801024843808}
   player: 
---- !u!212 &212130527579412458
+--- !u!114 &114552410161315632
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1721220877765840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c074b1ad301140b438e6079d06246f8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 1277236468000044, guid: cae6ed42b32690940bb19ee0e02bd5d8, type: 2}
+  player: {fileID: 114361795137600058}
+  speed: 3000
+  cooldown: 0.5
+--- !u!212 &212528801024843808
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1904001260556660}
+  m_GameObject: {fileID: 1721220877765840}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
