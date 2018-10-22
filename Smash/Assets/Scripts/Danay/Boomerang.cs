@@ -80,12 +80,25 @@ public class Boomerang : MonoBehaviour {
         if (collision.gameObject.tag == "Danay") {
             Reset();    // Resets the values
         }
+        if (collision.gameObject.GetComponent<Rigidbody2D>() == null) return;
 
         if (collision.gameObject.tag != "Danay" && collision.gameObject.tag != "Weapon") { // If the boomerang hits something 
             returning = true;   // Is currently returning
             speed *= -1;    // Turns the boomerang around
             rb.velocity = new Vector2(speed, 0);    // Sets the new velocity
-            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(5000, 500));
+            switch (collision.gameObject.tag)
+            {
+                case ("Åsmund"):
+                    collision.gameObject.GetComponent<Player_Controller>().enabled = false;
+                    collision.gameObject.GetComponent<Stats>().TakeDmg(10);
+                    break;
+                case ("Glenn"):
+                    collision.gameObject.GetComponent<Movement>().enabled = false;
+                    collision.gameObject.GetComponent<Stats>().TakeDmg(10);
+                    break;
+            }
+            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(50 * direction, 50 * 10));
         }
+        
     }
 }

@@ -13,7 +13,6 @@ public class Controller : MonoBehaviour {
 
     public string player;           // Referance to if the character is player1 or player2
 
-
     public float m_speed = 1000f;   // Movement speed
     public float m_smooth = .05f;   // Smooth movement
     public float m_jump = 400f;     // Jump force
@@ -89,9 +88,11 @@ public class Controller : MonoBehaviour {
             jump = true;
             animator.SetBool("IsGrounded", false); // Sets the animator parameter
         }
+
+        if (Input.GetButtonDown("Fire2" +player))
+            rb.GetComponent<Dash>().input = true;
         ////////////////////////////////
     }
-
 
     // Update is called once per frame
     void FixedUpdate() {
@@ -122,12 +123,14 @@ public class Controller : MonoBehaviour {
         if (collision.gameObject.CompareTag("Ground")) {
             animator.SetBool("IsGrounded", true);   // Sets the animator parameter to grounded
             hasAirJumped = 0;   // Resets the jump amount variable
+            grounded = true;
         }
     }
     private void OnCollisionExit2D(Collision2D collision) { // Checks if the player is no longer grounded
         if (collision.gameObject.CompareTag("Ground")) {
             animator.SetBool("IsGrounded", false);  // Sets the animator parameter to no longer grounded
             hasAirJumped = 1; // Sets the players jump amount variable to 1
+            grounded = false;
         }
     }
 }

@@ -6,11 +6,11 @@ public class Attack : MonoBehaviour {
 
     public Controller controller;
 
-    public float force = 5000;
+    public float force = 50;
     private float duration = 0.3f;
-    private float time;
     private bool isHitting;
     private GameObject treff;
+    private int direction;
 
     void Update() {
 
@@ -19,12 +19,20 @@ public class Attack : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.tag != "Danay" ) {
-            if (controller.face) force = -5000;
-            else force = 5000;
-            time = Time.time;
+            if (controller.face) direction = -1;
+            else direction = 1;
             isHitting = true;
-          //collision.collider.gameObject.GetComponent<Player_Controller>().enabled = false;
-            collision.collider.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(force, 0));
+            switch (collision.collider.tag) {
+                case ("Åsmund"):
+                    collision.collider.gameObject.GetComponent<Player_Controller>().enabled = false;
+                    collision.collider.gameObject.GetComponent<Stats>().TakeDmg(10);
+                    break;
+                case ("Glenn"):
+                    collision.collider.gameObject.GetComponent<Movement>().enabled = false;
+                    collision.collider.gameObject.GetComponent<Stats>().TakeDmg(10);
+                    break;
+            }
+            collision.collider.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(force*direction, force*10));
         }
     }
 }

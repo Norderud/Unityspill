@@ -7,6 +7,7 @@ public class checkController : MonoBehaviour {
     public Controller script;
     private float timer = 50f;
 
+
 	// Use this for initialization
 	void Start () {
 		
@@ -15,15 +16,16 @@ public class checkController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-
-        if (script.enabled == false && timer > 0)
-        {
-            timer--;
-        }
-        else
-        {
-            script.enabled = true;
-            timer = 50f;
+        if (!gameObject.GetComponent<Stats>().dead) {
+            if (script.enabled == false && timer > 0)
+            {
+                timer--;
+            }
+            else
+            {
+                script.enabled = true;
+                timer = 50f;
+            }
         }
 
     }
