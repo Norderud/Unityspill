@@ -207,7 +207,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 534f9a266b99e7449a487ea2d3215345
+      spriteID: 35a0fcf479f38784db2ada9b800ecc1a
       vertices: []
       indices: 
       edges: []
@@ -227,7 +227,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 778404144a97f2346ba13b8ef9fa0970
+      spriteID: ef214489269be2f418f67fcad84aaa02
       vertices: []
       indices: 
       edges: []
@@ -247,7 +247,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b788593c2b7895f488fed75da97e4461
+      spriteID: bf0335d56e4ad0d408f9734887aa9eef
       vertices: []
       indices: 
       edges: []
@@ -267,7 +267,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f0620d4f9b46f743b395ce8996c0395
+      spriteID: 1ffa064b23340bf4892cbc4cfb9246d0
       vertices: []
       indices: 
       edges: []
@@ -287,7 +287,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15571cc94a8a073418350a38ad193a79
+      spriteID: 8567d33e17c16c149a844b748bbfdffa
       vertices: []
       indices: 
       edges: []
@@ -307,7 +307,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a479b58a230edd4cb2f9b4783251aea
+      spriteID: 78fd579d30c0c03428eaaec23361f4ac
       vertices: []
       indices: 
       edges: []
@@ -327,7 +327,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d13824760092f36479a2ae072611b9dd
+      spriteID: d57f3e8caea76be41a463bc866d158e6
       vertices: []
       indices: 
       edges: []
@@ -347,7 +347,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59a7768963d09284bb89fa00cb76d7c0
+      spriteID: c7e8d3b677cc2a74db1bb2486ac2d871
       vertices: []
       indices: 
       edges: []
@@ -367,7 +367,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfc9197e3d2293946a010f4f13292c8d
+      spriteID: 3d47eee160d06c74ab0953f51b8766a3
       vertices: []
       indices: 
       edges: []
@@ -387,7 +387,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ebe05736340e4c439904b3057509d93
+      spriteID: 38b4e1b10bd68484785c7d4538cd9789
       vertices: []
       indices: 
       edges: []
@@ -407,7 +407,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8cd96f3359c30d49834c77e5fc3c243
+      spriteID: 0aa5023ce2ac8824a8be76a74cdb376b
       vertices: []
       indices: 
       edges: []
@@ -427,7 +427,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf34eb4edb1ff7449b41560c7ba4ba32
+      spriteID: 65e5809af46afa54687108416c40fc11
       vertices: []
       indices: 
       edges: []
@@ -447,7 +447,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41bcbe9c4058d9e49b5a83c91e6aab4b
+      spriteID: 01a27460d006ca441923c74c629a9c41
       vertices: []
       indices: 
       edges: []
@@ -467,7 +467,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbbd7c41b8335f243b4d6429881dfa21
+      spriteID: 085ac319a20af924c843d567df698e67
       vertices: []
       indices: 
       edges: []
@@ -487,7 +487,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73f4793bf4c40204bac527e7bf06ed17
+      spriteID: 14cef373c621f674c9221eb39a423bfd
       vertices: []
       indices: 
       edges: []
@@ -507,7 +507,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9843b87cc7a840047b1d92e16cda05e2
+      spriteID: 32000cc895700984883a72c10014cc2e
       vertices: []
       indices: 
       edges: []
@@ -527,7 +527,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5220de64bef146643a3a53c8d87f59e2
+      spriteID: f280b7b28782a104cb912ed6ea2e9f8b
       vertices: []
       indices: 
       edges: []
@@ -547,7 +547,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a753a956b5193c1409d2211a6683569c
+      spriteID: ad7e91131f89f9f459d640517596943a
       vertices: []
       indices: 
       edges: []
@@ -567,7 +567,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2697dc3d7004f64abc3a8159feca88c
+      spriteID: bdd6521b690eaa44bbe6dbf64818fae4
       vertices: []
       indices: 
       edges: []
@@ -587,7 +587,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92d93c7c400e1fb46b6afdddb2ac7964
+      spriteID: 82320ee90df193f4dab944ee69604a1e
       vertices: []
       indices: 
       edges: []
@@ -607,7 +607,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc7c438ef15c2e240bbad09914b7486a
+      spriteID: 35b02bce6bd0e9846b4c08e1abae634f
       vertices: []
       indices: 
       edges: []
@@ -627,7 +627,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fede474f51627e4ca1dc0708b2a7a35
+      spriteID: c0857cf9969b26144a7185e28d89300e
       vertices: []
       indices: 
       edges: []
@@ -647,7 +647,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bbf32b6dd31f774fa90b62e9d4a0a95
+      spriteID: a9199c97b306fc147b7b8d2d036d0300
       vertices: []
       indices: 
       edges: []
@@ -667,7 +667,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 123f9536a022444408adea3e7fe0d1b6
+      spriteID: 736e1d24922248b419e2b8f3ec5ab103
       vertices: []
       indices: 
       edges: []
@@ -687,7 +687,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94aa09b0e56fce943b2f44aec8660e6f
+      spriteID: 93e795601a598fd48a4755c0cc536ed9
       vertices: []
       indices: 
       edges: []
@@ -707,7 +707,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ab20cf1586fc874488ffaa991598729
+      spriteID: f3fef28db3d496b41861852c71383300
       vertices: []
       indices: 
       edges: []
@@ -727,7 +727,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c38f44663f9c03e4cadc4c3470606aa3
+      spriteID: a02626dd967bd3842be54f56e7fbef3d
       vertices: []
       indices: 
       edges: []
@@ -747,7 +747,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51a3f49b6fe9c0f49a0e620dd4abdc8c
+      spriteID: bfbe61b43ee0e0a408af0f1fdf22e340
       vertices: []
       indices: 
       edges: []
@@ -767,7 +767,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa48109b53b86b441825b359728ce4f7
+      spriteID: 347bb282881ef84489e90fab97a1e0f5
       vertices: []
       indices: 
       edges: []
@@ -787,7 +787,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5817dc9d90ca4645b9dfab2f1a2effc
+      spriteID: d9218dd322f1987489454c81ff8024ae
       vertices: []
       indices: 
       edges: []
@@ -807,7 +807,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87fb49e752a1040478f8536d8a8e579f
+      spriteID: 9d64db6397fb65e47b8e5be67b323a30
       vertices: []
       indices: 
       edges: []
@@ -827,7 +827,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 283bae6c8b9801a4a9c1ab856ffbc7c1
+      spriteID: 5fd09f71c210fc443999e68cf1a3b648
       vertices: []
       indices: 
       edges: []
@@ -847,7 +847,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c282d89d3be7d444496b93abd6197deb
+      spriteID: dc2e8161364dae04b9e336c9234c73b3
       vertices: []
       indices: 
       edges: []
@@ -867,7 +867,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42075b6168b88c4428ae3373bbbb9356
+      spriteID: 772a5ce254feeda4d8f236d21643b74b
       vertices: []
       indices: 
       edges: []
@@ -887,7 +887,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c82cddb4792ed60488c63d9a4077d300
+      spriteID: 7e51d832f1247a546b8a68229fa5cf13
       vertices: []
       indices: 
       edges: []
@@ -907,7 +907,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f8b6958779f5c04c8f38209868e92b1
+      spriteID: 9ce552fad6477404ca75a3771643bd50
       vertices: []
       indices: 
       edges: []
@@ -927,7 +927,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8d6cf5ccec4d714a82d58f6d6e80aa8
+      spriteID: e8b055aa097de57428c686f0fb31180f
       vertices: []
       indices: 
       edges: []
@@ -947,7 +947,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29894a84bf556e745b210952c681beb8
+      spriteID: d282b65c0a448584588c2ca7b53389f6
       vertices: []
       indices: 
       edges: []
@@ -967,7 +967,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66ca5a50c713a49469c73c8ecbe06696
+      spriteID: c3a8ef6fe7884bf4a9aab32b7681e041
       vertices: []
       indices: 
       edges: []
@@ -987,7 +987,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8567ae947534f774d9ca1b489c1625bd
+      spriteID: 60a17a26ed902114fbc3aba0715459a4
       vertices: []
       indices: 
       edges: []
@@ -996,10 +996,10 @@ TextureImporter:
       name: ninja_poses_40
       rect:
         serializedVersion: 2
-        x: 601
-        y: 1006
-        width: 155
-        height: 74
+        x: 634
+        y: 818
+        width: 61
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1007,7 +1007,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d9634097956b76458b58a21e507ff9f
+      spriteID: d35290d1cbbfa7947a693f705d67b8c8
       vertices: []
       indices: 
       edges: []
@@ -1027,7 +1027,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84fb4840ae6ec8343af5095028601bd1
+      spriteID: 3d126ce423c4fe343a54edc41f7f62ef
       vertices: []
       indices: 
       edges: []
@@ -1047,7 +1047,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9414ca3c5f380064db8d38af6a6537cc
+      spriteID: bdeb4a04f5dadd545ac620b1e08cea17
       vertices: []
       indices: 
       edges: []
@@ -1067,7 +1067,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b6cae99bc032ba4bb3a6e9769fe9802
+      spriteID: ebfe58bc75a17734a8bba20591ded7f9
       vertices: []
       indices: 
       edges: []
@@ -1087,7 +1087,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf1479b68b86a544c8bd07edb957f170
+      spriteID: 39c32fd4254dbee49a4a1fb6b516cd13
       vertices: []
       indices: 
       edges: []
@@ -1096,10 +1096,10 @@ TextureImporter:
       name: ninja_poses_45
       rect:
         serializedVersion: 2
-        x: 134
-        y: 841
-        width: 90
-        height: 131
+        x: 350
+        y: 844
+        width: 176
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1107,7 +1107,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79372f2b9e4ba5849be10b6c36e04155
+      spriteID: e61207285075d3344abc02595475e64b
       vertices: []
       indices: 
       edges: []
@@ -1127,7 +1127,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a2b8aa91aedfe147847e5712ef7c4c2
+      spriteID: 023be89047a156845b4c68000cb610ff
       vertices: []
       indices: 
       edges: []
@@ -1147,7 +1147,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36769d5ae1a3c43458d08f2b9247ba08
+      spriteID: e01b05640b6927147b5b5144c6816450
       vertices: []
       indices: 
       edges: []
@@ -1167,7 +1167,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ad578a8d2e63d146aa5a56037798b4e
+      spriteID: 5b4eefbbe570cf144ad88d8b52e8b93b
       vertices: []
       indices: 
       edges: []
@@ -1187,7 +1187,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f08c2b55cdb58f44e8ac9641e2f945f2
+      spriteID: 99cf6af4c73b7114c91e55652bf44c9d
       vertices: []
       indices: 
       edges: []
@@ -1207,7 +1207,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6d87eaec70a8b640aaeba1b1c305640
+      spriteID: 328e99146d96e3f4b8b7330472a85359
       vertices: []
       indices: 
       edges: []
@@ -1227,7 +1227,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad185bcb66b886747a74a3f8aceaff18
+      spriteID: 4271d4ed3c9b70c45aedaaac55c0e691
       vertices: []
       indices: 
       edges: []
@@ -1247,7 +1247,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f9c8960087405749b62a7b3a5b6dd25
+      spriteID: 5d0ab31659691ef4a90d3bf522da705e
       vertices: []
       indices: 
       edges: []
@@ -1267,7 +1267,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e24f16c8baebd5740a176a94ce263a29
+      spriteID: 5b5b81fbb31ce7240aa1d9e50ae3e1d8
       vertices: []
       indices: 
       edges: []
@@ -1287,7 +1287,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d877597c105426040b07ca5518e285bd
+      spriteID: ed5ce6367c584f6419fac09e2442b9e3
       vertices: []
       indices: 
       edges: []
@@ -1307,7 +1307,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16c0be4b38e5dab448e0009c6102e15f
+      spriteID: cc23e7df1da07824a82af44a8d299d9e
       vertices: []
       indices: 
       edges: []
@@ -1327,7 +1327,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6ca3de02808da24b8734af4f86a3f29
+      spriteID: 46f3b7bcff353c745a18c9c215e9912e
       vertices: []
       indices: 
       edges: []
@@ -1347,7 +1347,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e104ddeefcb6f1d4095cc21032ac5ee1
+      spriteID: f07f496e18ce12241b01692c2d0a76e6
       vertices: []
       indices: 
       edges: []
@@ -1367,7 +1367,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 091734a3103307743baa41bad68ad574
+      spriteID: f8fdebb340b38fb41a0c7a09ac232284
       vertices: []
       indices: 
       edges: []
@@ -1387,7 +1387,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc3e89fe2984a91448a66837f81f4bd3
+      spriteID: fefbde9d1d879a04c9df1ba4f41b90bf
       vertices: []
       indices: 
       edges: []
@@ -1407,7 +1407,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78ebd8b2f7abf4f40837af82ece8c973
+      spriteID: ee34982725a456847a73b2a37c1d08c3
       vertices: []
       indices: 
       edges: []
@@ -1427,7 +1427,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc8bb6a0120a8ce41aeeec4f6328cbc4
+      spriteID: 681917586a745514da0e0190ecc67df9
       vertices: []
       indices: 
       edges: []
@@ -1447,7 +1447,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb8077a74c0d86746adecc369271a2ff
+      spriteID: 6e2306e3d31496e4e8cb00f27ffbe062
       vertices: []
       indices: 
       edges: []
@@ -1467,7 +1467,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 077fc2930535511409fdc842d16203ec
+      spriteID: ec7b5758e01e463498d26088f19deee9
       vertices: []
       indices: 
       edges: []
@@ -1476,10 +1476,10 @@ TextureImporter:
       name: ninja_poses_64
       rect:
         serializedVersion: 2
-        x: 153
-        y: 573
-        width: 152
-        height: 43
+        x: 228
+        y: 400
+        width: 40
+        height: 183
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1487,7 +1487,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa1606c1b0eca874b9dc5cf3e63258f5
+      spriteID: 41f156944f5f760448b0637978169073
       vertices: []
       indices: 
       edges: []
@@ -1497,9 +1497,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 305
-        y: 570
+        y: 572
         width: 143
-        height: 82
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1507,7 +1507,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff159be8dd92450468f5c8422338a169
+      spriteID: d0e7c032d54aef041b046ef7ad9ff1f6
       vertices: []
       indices: 
       edges: []
@@ -1527,7 +1527,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6c59a74670458c4bb310f3e9065a73c
+      spriteID: f905d78d6c0b5b74badf422c70af1de0
       vertices: []
       indices: 
       edges: []
@@ -1547,7 +1547,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66cea0c0cd3c6db49ad32dfb3d925858
+      spriteID: 09791442a133068458f399e4e109e91b
       vertices: []
       indices: 
       edges: []
@@ -1567,7 +1567,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 289b088ca64388f4bb54b84c3c660ca5
+      spriteID: 443d1e39b933a8d409a8714fe3055236
       vertices: []
       indices: 
       edges: []
@@ -1587,7 +1587,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 577c010c733504a4b8b1d7015091013f
+      spriteID: 40e8cbf0ca781c54e9e7441b6c73a0ac
       vertices: []
       indices: 
       edges: []
@@ -1607,7 +1607,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba7da19ee22ca044faf58cddf02b65d4
+      spriteID: 7a9bf859cf81fc046a6bffaea2ab86a3
       vertices: []
       indices: 
       edges: []
@@ -1627,7 +1627,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4edd06720b898a4eb8d8861a14bae94
+      spriteID: 913ede27279d4044dbb161ed344c8d39
       vertices: []
       indices: 
       edges: []
@@ -1647,7 +1647,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d02e650fdaa6b764c95caf88647ce830
+      spriteID: dd57c8cbf2629734a99661d58657c414
       vertices: []
       indices: 
       edges: []
@@ -1656,308 +1656,8 @@ TextureImporter:
       name: ninja_poses_73
       rect:
         serializedVersion: 2
-        x: 295
-        y: 422
-        width: 46
-        height: 156
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 676434c4a220dee42a4caf4e291df587
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ninja_poses_74
-      rect:
-        serializedVersion: 2
-        x: 356
-        y: 439
-        width: 57
-        height: 125
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 12452e3f250364c4297bf1f1aad0f5b6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ninja_poses_75
-      rect:
-        serializedVersion: 2
-        x: 432
-        y: 415
-        width: 59
-        height: 147
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b2c71cba6c4e044aa6b55cd56b72041
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ninja_poses_76
-      rect:
-        serializedVersion: 2
-        x: 515
-        y: 400
-        width: 44
-        height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 811ca5fefdc21b549b771a143024edac
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ninja_poses_77
-      rect:
-        serializedVersion: 2
-        x: 578
-        y: 440
-        width: 50
-        height: 144
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4780c975e2b021741884cb87d89c025c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ninja_poses_78
-      rect:
-        serializedVersion: 2
-        x: 651
-        y: 377
-        width: 64
-        height: 175
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 69d75241316e60d4290b98a546fac2af
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ninja_poses_79
-      rect:
-        serializedVersion: 2
-        x: 731
-        y: 436
-        width: 73
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d1d474d79651b4b4285646e66c43cd32
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ninja_poses_80
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 429
-        width: 96
-        height: 117
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b3dd31b079dc2340b6e227a5da4618f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ninja_poses_81
-      rect:
-        serializedVersion: 2
-        x: 906
-        y: 420
-        width: 130
-        height: 53
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e4e1448b82644941885a9ef22dfa5f8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ninja_poses_82
-      rect:
-        serializedVersion: 2
-        x: 1044
-        y: 425
-        width: 97
-        height: 111
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dffbcc27d4c23104f81f508dbacbbb7c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ninja_poses_83
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 135
-        width: 69
-        height: 177
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 505465877aaa1a74f831b178d2f21501
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ninja_poses_84
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 301
-        width: 77
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 23531f0fc201752428b3069fa9443082
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ninja_poses_85
-      rect:
-        serializedVersion: 2
-        x: 140
-        y: 296
-        width: 46
-        height: 94
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4a0610f6019bc4e469b30643734e45a1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ninja_poses_86
-      rect:
-        serializedVersion: 2
-        x: 201
-        y: 295
-        width: 74
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a41cfac168228fb4baf81720fe362f6d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ninja_poses_87
-      rect:
-        serializedVersion: 2
-        x: 283
-        y: 300
-        width: 98
-        height: 122
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 79d9f55917475da45b0ed151abf9aa80
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ninja_poses_88
-      rect:
-        serializedVersion: 2
-        x: 386
-        y: 272
+        x: 340
+        y: 424
         width: 108
         height: 140
       alignment: 0
@@ -1967,18 +1667,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ceefdea56be2fa64dbcc0e7962a71fbf
+      spriteID: 6c04cbec5472c7849becc90aa83074af
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninja_poses_89
+      name: ninja_poses_74
       rect:
         serializedVersion: 2
-        x: 502
-        y: 283
-        width: 155
+        x: 456
+        y: 355
+        width: 161
         height: 124
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1987,13 +1687,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bdd2c8854776df94894f94639e192b87
+      spriteID: 4a782fffe0fe7e546b7efb59ff4e2a7b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninja_poses_90
+      name: ninja_poses_75
       rect:
         serializedVersion: 2
         x: 644
@@ -2007,13 +1707,193 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77cd10e0f4c338841b4538220960e853
+      spriteID: 8e011aae9934e624ca756f13dc562d7c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninja_poses_91
+      name: ninja_poses_76
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 429
+        width: 96
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fce04ed49fd14e41ac566188afb1e72
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_poses_77
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 429
+        width: 96
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20de51d27cb76bf47b9a60471a0f63a2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_poses_78
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 420
+        width: 130
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e12129953ad03148884955d04919c52
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_poses_79
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 425
+        width: 97
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8580583d8d27284ab21f66c03bd14e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_poses_80
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 301
+        width: 77
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39d11e65f4b4334c896bd75e818f8ca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_poses_81
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 296
+        width: 46
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7d9b440685464419ec5c00912ec72f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_poses_82
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 295
+        width: 74
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ccb8c942ff6804ca3339d4d2eaca55
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_poses_83
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 300
+        width: 98
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed3ed579f7067c54cb1a79233b0ab5d8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_poses_84
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 283
+        width: 132
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a70444bd8a014d4f96947d67dcd7dac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_poses_85
       rect:
         serializedVersion: 2
         x: 778
@@ -2027,13 +1907,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b96832460801054a845a0c057200bc1
+      spriteID: 57a5d6c6938f1144cb2f03dabf35717b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninja_poses_92
+      name: ninja_poses_86
       rect:
         serializedVersion: 2
         x: 905
@@ -2047,13 +1927,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51da5d548ecea6c46915c038a903b8bb
+      spriteID: 6a5b84fd508d88b4892da5aa273051cc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninja_poses_93
+      name: ninja_poses_87
       rect:
         serializedVersion: 2
         x: 1016
@@ -2067,19 +1947,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56d82980ebff51f46a36df02aaf82a8b
+      spriteID: 737b5072d2b20d44a84ed8c0839b94b2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninja_poses_94
+      name: ninja_poses_88
       rect:
         serializedVersion: 2
-        x: 96
-        y: 135
-        width: 117
-        height: 88
+        x: 28
+        y: 108
+        width: 131
+        height: 132
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2087,33 +1967,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b15c50ae4e7749b4ebd8741d2822dbc6
+      spriteID: 2a4a35a51913d104495698ea9d2122fe
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninja_poses_95
-      rect:
-        serializedVersion: 2
-        x: 215
-        y: 144
-        width: 166
-        height: 133
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 48cd95bd8616035489aaaaea83aeb69c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ninja_poses_96
+      name: ninja_poses_89
       rect:
         serializedVersion: 2
         x: 390
@@ -2127,173 +1987,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15a16ef99fe18f747b85bda8d7b19c9c
+      spriteID: 348a17e16f885fe4db6cac39b7e9442a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninja_poses_97
-      rect:
-        serializedVersion: 2
-        x: 484
-        y: 149
-        width: 105
-        height: 129
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd91c3faf4c3da14a801046f326abba6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ninja_poses_98
-      rect:
-        serializedVersion: 2
-        x: 597
-        y: 167
-        width: 161
-        height: 108
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0e022e1fb6b5a8e4794b8ca46967763e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ninja_poses_99
-      rect:
-        serializedVersion: 2
-        x: 776
-        y: 149
-        width: 116
-        height: 114
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6025f7f6949370347b87ed43a251669d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ninja_poses_100
-      rect:
-        serializedVersion: 2
-        x: 884
-        y: 144
-        width: 84
-        height: 135
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4007658190ef0a24ca8f13e221b53b7e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ninja_poses_101
-      rect:
-        serializedVersion: 2
-        x: 977
-        y: 147
-        width: 130
-        height: 117
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce03761de71b08846bf397fa2f32b7e9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ninja_poses_102
-      rect:
-        serializedVersion: 2
-        x: 28
-        y: 4
-        width: 131
-        height: 131
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 95563b018e1610c4bb31d20b17364e9f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ninja_poses_103
-      rect:
-        serializedVersion: 2
-        x: 182
-        y: 16
-        width: 107
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9bbfd7f488eef3149868058f9bd64200
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ninja_poses_104
-      rect:
-        serializedVersion: 2
-        x: 337
-        y: 22
-        width: 115
-        height: 109
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d79d0a91689575c4488e073c413edaa7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ninja_poses_105
+      name: ninja_poses_90
       rect:
         serializedVersion: 2
         x: 497
@@ -2307,13 +2007,153 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13938fdc845cddc4b958daa4432cd8d5
+      spriteID: e09ad06d9de4c6340a4c21fd3b498675
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninja_poses_106
+      name: ninja_poses_91
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 167
+        width: 161
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3078daa284c7c8f46868d1099199e77f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_poses_92
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 144
+        width: 84
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408be06f321884f47b082fe33b4a3ddf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_poses_93
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 144
+        width: 84
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acc18103b044cf4469f7e612b12909a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_poses_94
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 147
+        width: 130
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8718176855447d84f9cb4a57a4d146e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_poses_95
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 16
+        width: 107
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f5136253092a1f4598d51fff7210ba5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_poses_96
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 22
+        width: 115
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27639b3574fbf76408df4f5b8c5a0318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_poses_97
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 5
+        width: 94
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0550a7eb52e9b546ab1ba4c38e9d185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja_poses_98
       rect:
         serializedVersion: 2
         x: 616
@@ -2327,13 +2167,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33a4fd7fc3616f84ba23d7b17a30c81f
+      spriteID: 467d86cef36cd374aa17b38c2bdd1ed1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninja_poses_107
+      name: ninja_poses_99
       rect:
         serializedVersion: 2
         x: 799
@@ -2347,13 +2187,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edf0dd70dafaa454b84ebec0afaa9da5
+      spriteID: 7b5e65b125a60544289ae311e26224c2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninja_poses_108
+      name: ninja_poses_100
       rect:
         serializedVersion: 2
         x: 935
@@ -2367,7 +2207,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c41228800b9ea0d4e8d4c80307830b8f
+      spriteID: c7d427600e1b292499e230c5a05e8f27
       vertices: []
       indices: 
       edges: []
