@@ -5,7 +5,7 @@ using UnityEngine;
 public class CheckMovement : MonoBehaviour {
 
     public Movement script;
-    private float timer = 50f;
+    private float timer = 25f;
 	// Use this for initialization
 	void Start () {
 		

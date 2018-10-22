@@ -122,6 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 318696262}
   - component: {fileID: 318696261}
+  - component: {fileID: 318696263}
   m_Layer: 0
   m_Name: Script
   m_TagString: Untagged
@@ -144,6 +145,8 @@ MonoBehaviour:
   - {fileID: 1886607563585846, guid: 0be22fc4887d59e49ad3a66aa3dc9c16, type: 2}
   - {fileID: 1046801222536652, guid: 6804d6f9052ddf544bf2a9b264d0a3c2, type: 2}
   - {fileID: 1721220877765840, guid: e48112870b44df74e9b9981fbae048de, type: 2}
+  player1: {fileID: 0}
+  player2: {fileID: 0}
 --- !u!4 &318696262
 Transform:
   m_ObjectHideFlags: 0
@@ -157,6 +160,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &318696263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 318696260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5517ecd4adf490d489a7e88a810808fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOver: 0
+  chars: {fileID: 318696261}
 --- !u!1001 &1488744729
 Prefab:
   m_ObjectHideFlags: 0

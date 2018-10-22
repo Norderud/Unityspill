@@ -62,6 +62,8 @@ GameObject:
   - component: {fileID: 114774917777955908}
   - component: {fileID: 95234411539322332}
   - component: {fileID: 114561336532678552}
+  - component: {fileID: 114504672580675350}
+  - component: {fileID: 114670990336121010}
   m_Layer: 0
   m_Name: Danay
   m_TagString: Danay
@@ -427,6 +429,18 @@ MonoBehaviour:
   fire: 0
   distance: 10
   startSpeed: 60
+--- !u!114 &114504672580675350
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1886607563585846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bb7a052c19a0d949aaa618953c3f99a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  script: {fileID: 114774917777955908}
 --- !u!114 &114561336532678552
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -443,15 +457,29 @@ MonoBehaviour:
   animator: {fileID: 95234411539322332}
   coolDown: 0
   startDashTime: 0.2
-  dashSpeed: 80
+  dashSpeed: 170
+  input: 0
   dashEffect: {fileID: 1630286225854680, guid: 6b582e88db03c2f48b8430c090558340, type: 2}
---- !u!114 &114774917777955908
+--- !u!114 &114670990336121010
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1886607563585846}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d33198bb9c8006409efe0a32f31c4aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  dead: 0
+--- !u!114 &114774917777955908
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1886607563585846}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b930e90c72c94fe4d8f5212022648fd7, type: 3}
   m_Name: 

@@ -15,6 +15,7 @@ public class Dash : MonoBehaviour {
     public float dashSpeed;     // Determines dash speed
     private bool isDashing = false;      // Determines if the player is dashing or not
     private bool hasDashed = false;      // Used to check if the player has dashed already in the air
+    public bool input = false;
 
     public GameObject dashEffect;
 
@@ -23,13 +24,17 @@ public class Dash : MonoBehaviour {
     void Start () {
         dashTime = startDashTime;
 	}
-	
-	// Update is called once per frame
-	void FixedUpdate () {
+
+    // Update is called once per frame
+    void FixedUpdate () {
+        Dashing();
+        input = false;
+    }
+    private void Dashing() {
         if (!isDashing) {   //Dashes if dash is ready
             if (controls.grounded)
                 hasDashed = false;
-            if (Input.GetButtonDown("Fire2"+controls.player) && coolDownTimer < Time.time && !hasDashed) { //Checks if button is clicked and cooldown is ready
+            if (input && coolDownTimer < Time.time && !hasDashed) { //Checks if button is clicked and cooldown is ready
                 isDashing = true;
                 hasDashed = true;
                 animator.SetBool("IsDashing", true);    // dash animation
@@ -39,7 +44,7 @@ public class Dash : MonoBehaviour {
                 myDashEffect.transform.parent = rb.transform;   // sets dash effect as child to follow the player
             }
         }
-        else { 
+        else {
             if (dashTime <= 0) {    // After dash is finished
                 coolDownTimer = Time.time + coolDown;   // Sets the cooldown after the dash
                 dashTime = startDashTime;               // Resets dashTime to startDashTime
