@@ -40,11 +40,10 @@ public class Controller : MonoBehaviour {
         }
     }
 
-
     private void Update() {
+        //////////////// ATTACKING
 
         hitBox.GetComponent<BoxCollider2D>().enabled = false;
-        //////////////// ATTACKING
 
         //Resets attack
         if (attackStart > 0 && Time.time - attackStart > attackDuration) {
@@ -60,6 +59,7 @@ public class Controller : MonoBehaviour {
         }
         //////////////////////////////
 
+        //////////////// INPUT
         if (Input.GetButtonDown("Fire3"+player) && !boomerang.fire) // Detects input for boomerang skill
         {
             boomerang.Shoot();  // Starts the boomerang update script
@@ -74,14 +74,14 @@ public class Controller : MonoBehaviour {
             if (!face)
                 hitBox.transform.position = new Vector2(hitBox.transform.position.x - 2.5f, hitBox.transform.position.y);
             face = true;    // Changes the players direction to left
-            flip(face);
-            
+            sprite.flipX = face;
+
         }
         else if (horizontal > 0) {  // Player is facing right
             if (face)
                 hitBox.transform.position = new Vector2(hitBox.transform.position.x + 2.5f, hitBox.transform.position.y);
             face = false;   // Changes the players direction to right
-            flip(face);
+            sprite.flipX = face;
 
         }
 
@@ -89,6 +89,7 @@ public class Controller : MonoBehaviour {
             jump = true;
             animator.SetBool("IsGrounded", false); // Sets the animator parameter
         }
+        ////////////////////////////////
     }
 
 
@@ -98,10 +99,6 @@ public class Controller : MonoBehaviour {
         jump = false;   // Resets the jump variable
     }
 
-    void flip(bool flipper) {   // Flips the player
-        sprite.flipX = flipper;
-    }
-
     void HandleMovement(float move, bool jump) {
         animator.SetFloat("JumpSpeed", rb.velocity.y); // Tells the animator if the player is jumping up or falling down
         animator.SetFloat("Speed", Mathf.Abs(move));    // Animates if player is moving
@@ -109,7 +106,6 @@ public class Controller : MonoBehaviour {
         rb.velocity = Vector3.SmoothDamp(rb.velocity, moving, ref m_Velocity, m_smooth);    // Smooth(?) movement
 
         if (jump && hasAirJumped < 2) { // Jumps
-            grounded = false;   // Player is no longer grounded
             hasAirJumped++;     // Increments the number of jumps
             jump = false;       
             rb.velocity = new Vector2(rb.velocity.x, 0f);   // Sets the velocity for the jump
@@ -124,14 +120,12 @@ public class Controller : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision) {    // Checks if the player is grounded or not
         if (collision.gameObject.CompareTag("Ground")) {
-            grounded = true;    // Sets the player as grounded
             animator.SetBool("IsGrounded", true);   // Sets the animator parameter to grounded
             hasAirJumped = 0;   // Resets the jump amount variable
         }
     }
     private void OnCollisionExit2D(Collision2D collision) { // Checks if the player is no longer grounded
         if (collision.gameObject.CompareTag("Ground")) {
-            grounded = false;   // The player is no longer grounded
             animator.SetBool("IsGrounded", false);  // Sets the animator parameter to no longer grounded
             hasAirJumped = 1; // Sets the players jump amount variable to 1
         }
