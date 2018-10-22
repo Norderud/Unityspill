@@ -5,12 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
-  - Ninja
   - Glenn
   - Danay
   - "\xC5smund"
   - Weapon
   - Bullets
+  - Shuriken
   layers:
   - Default
   - TransparentFX

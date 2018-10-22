@@ -3,7 +3,7 @@
 
 public class Player_Controller : MonoBehaviour {
 
-    private bool jump, grounded, pointUp;
+    private bool jump, pointUp;
     private int airJumped = 0;
     private float velocity;
 
@@ -46,11 +46,16 @@ public class Player_Controller : MonoBehaviour {
         // Moving the rigidbody and animating it
         rb.velocity = new Vector2(speed * horizontal * Time.deltaTime, rb.velocity.y);
         anim.SetFloat("horizontal", Mathf.Abs(horizontal));
+        anim.SetBool("djump", false);
         // Jumps if double jump is available
         if (jump && airJumped < 2)
         {
           rb.velocity = new Vector2(0, 0); // resets the velocity before each jump
           rb.AddForce(new Vector2(rb.velocity.x, jumpForce));
+          if(airJumped== 1)
+            {
+                anim.SetBool("djump", true);
+            }
           airJumped++;
         }
         // flips the animation to face moving direction
@@ -66,13 +71,17 @@ public class Player_Controller : MonoBehaviour {
     // For detecting when on ground and not
     private void OnCollisionExit2D(Collision2D collision)
     {
-        grounded = false;
-        anim.SetBool("grounded", grounded);
+        if (collision.gameObject.tag == "Ground")
+        {
+            anim.SetBool("grounded", false);
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        grounded = true;
-        airJumped = 0;
-        anim.SetBool("grounded", grounded);
+        if (collision.gameObject.tag == "Ground")
+        {
+            airJumped = 0;
+            anim.SetBool("grounded", true);
+        }
     }
 }
