@@ -9,6 +9,10 @@ public class Movement : MonoBehaviour {
     public Transform player;
     private Rigidbody2D rb;
     public Animator ani;
+    public Transform flames;
+   
+
+    private int face;
 
     public string wPlayer;           // Referance to if the character is player1 or player2
 
@@ -71,7 +75,8 @@ public class Movement : MonoBehaviour {
 
         if (Input.GetButton("Jump"+ wPlayer) && fuel > 0 && player.position.y <= 10)
         {
-
+            flames.GetComponent<ParticleSystem>().enableEmission = true;
+            flames.position = new Vector2(player.position.x - 0, player.position.y + 1.5f);
             if (jump == true)
             {
                 rb.AddForce(new Vector2(0, jumpforce));
@@ -83,6 +88,10 @@ public class Movement : MonoBehaviour {
             rb.AddForce(new Vector2(0, flyForce));
             fuel--;
             isGrounded = false;
+        }
+        else
+        {
+            flames.GetComponent<ParticleSystem>().enableEmission = false;
         }
     }
         void OnCollisionEnter2D(Collision2D col) // check collision

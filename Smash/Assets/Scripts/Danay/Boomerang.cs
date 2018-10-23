@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Boomerang : MonoBehaviour {
 
+    // References
     public SpriteRenderer playerSprite; // Players sprite
     public Rigidbody2D rb;  // boomerangs rigidbody
     public Rigidbody2D pRb; // players rigidbody
@@ -22,7 +23,6 @@ public class Boomerang : MonoBehaviour {
     private bool returning = false;    // Determines if the boomerang is returning or not
     private bool shoot = false;        
     private int direction;          // Direction. -1 is left, 1 is right
-    private bool treff = false;     // Determines if the boomerang has hit something
 
     private float startDist;    //Starting distance
 
@@ -57,7 +57,6 @@ public class Boomerang : MonoBehaviour {
             startDist = rb.position.x;  // Start position of the boomerang
             boomerang.GetComponent<Renderer>().enabled = true;  // Renders the boomerang
             trail.enabled = true;   // Enables the trail effect
-            treff = false;  // Not hit anything
             shoot = true;   // Is currently shooting
             
             speed = startSpeed * direction; // determines the speed and direction to throw

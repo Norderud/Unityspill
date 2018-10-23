@@ -42,6 +42,8 @@ GameObject:
   - component: {fileID: 114361795137600058}
   - component: {fileID: 95094106016530176}
   - component: {fileID: 114552410161315632}
+  - component: {fileID: 114447911700796014}
+  - component: {fileID: 114666805070816944}
   m_Layer: 0
   m_Name: "\xC5smund"
   m_TagString: "\xC5smund"
@@ -173,6 +175,19 @@ MonoBehaviour:
   sprite: {fileID: 212528801024843808}
   kick: {fileID: 0}
   player: 
+--- !u!114 &114447911700796014
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1721220877765840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d33198bb9c8006409efe0a32f31c4aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  dead: 0
 --- !u!114 &114552410161315632
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -188,7 +203,22 @@ MonoBehaviour:
   player: {fileID: 114361795137600058}
   speed: 3000
   cooldown: 0.5
+<<<<<<< HEAD
   kick: {fileID: 61761894071990408}
+=======
+--- !u!114 &114666805070816944
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1721220877765840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef031a678d34f854abe354b4d90126ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  script: {fileID: 114361795137600058}
+>>>>>>> d96b73533fabb79e6613aad72c882b4965f37878
 --- !u!212 &212528801024843808
 SpriteRenderer:
   m_ObjectHideFlags: 1

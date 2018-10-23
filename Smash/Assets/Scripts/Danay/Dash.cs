@@ -38,9 +38,9 @@ public class Dash : MonoBehaviour {
                 isDashing = true;
                 hasDashed = true;
                 animator.SetBool("IsDashing", true);    // dash animation
-                controls.doInput = false;   // disables user input while dashing
+                rb.GetComponent<Danay_Input>().enabled = false;   // disables user input while dashing
                 Vector2 dashLocation = new Vector2(rb.position.x, rb.position.y - 2);   // Location for dasheffect
-                GameObject myDashEffect = Instantiate(dashEffect, dashLocation, Quaternion.identity) as GameObject; // Instantiates a dash effect using prefab
+                GameObject myDashEffect = Instantiate(dashEffect, dashLocation, Quaternion.identity); // Instantiates a dash effect using prefab
                 myDashEffect.transform.parent = rb.transform;   // sets dash effect as child to follow the player
             }
         }
@@ -50,7 +50,7 @@ public class Dash : MonoBehaviour {
                 dashTime = startDashTime;               // Resets dashTime to startDashTime
                 rb.velocity = Vector2.zero;             // Reset velocity after dash
                 animator.SetBool("IsDashing", false);   // Cancels the dashing animation
-                controls.doInput = true;                // Enable input after dashing
+                rb.GetComponent<Danay_Input>().enabled = true;
                 isDashing = false;
             }
             else {  // If player is currently dashing
