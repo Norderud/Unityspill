@@ -30,6 +30,7 @@ public class CharacterSpawner : MonoBehaviour {
                 p1.GetComponent<Movement>().enabled = enable;
                 break;
             case ("Danay"):
+                p1.GetComponent<Danay_Input>().enabled = enable;
                 p1.GetComponent<Controller>().enabled = enable;
                 break;
         }
@@ -41,6 +42,7 @@ public class CharacterSpawner : MonoBehaviour {
                 p2.GetComponent<Movement>().enabled = enable;
                 break;
             case ("Danay"):
+                p2.GetComponent<Danay_Input>().enabled = enable;
                 p2.GetComponent<Controller>().enabled = enable;
                 break;
         }

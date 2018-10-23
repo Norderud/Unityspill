@@ -19,17 +19,21 @@ public class Attack : MonoBehaviour {
     private int hasAttacked = 0;
     private float attackStart = 0;
     private float attackDuration = 0.4f;
+    private float hitDuration = 0.02f; // Hitbox activation duration
 
     void Update() {
+
+        if (Time.time-attackStart>hitDuration)
+            hitBox.GetComponent<BoxCollider2D>().enabled = false;   // Disables hitbox
 
         // Resets attack
         if (attackStart > 0 && Time.time - attackStart > attackDuration) {
             attackStart = 0;
             hasAttacked = 0;
             animator.SetInteger("hasAttacked", hasAttacked);
-            hitBox.GetComponent<BoxCollider2D>().enabled = false;   // Disables hitbox
         }
     }
+
 
     void OnCollisionEnter2D(Collision2D collision) {
         if (collision.collider.tag != "Danay" ) {
