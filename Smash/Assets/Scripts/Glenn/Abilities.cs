@@ -25,7 +25,7 @@ public class Abilities : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void FixedUpdate () {
+	void Update () {
 
         attackTriggerLeft.enabled = false;
         attackTriggerRight.enabled = false;
