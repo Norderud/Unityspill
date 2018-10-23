@@ -13,6 +13,7 @@ public class Player_Controller : MonoBehaviour {
     public float speed = 400f;
     public Animator anim;
     public SpriteRenderer sprite;
+    public Collider2D kick;
 
     public string player;           // Reference to if the character is player1 or player2
 
@@ -62,10 +63,13 @@ public class Player_Controller : MonoBehaviour {
         if (horizontal < 0)
         {
             sprite.flipX = true;
+            kick.transform.position = new Vector2(kick.transform.position.x - 2.5f, kick.transform.position.y);
         }
         else if (horizontal > 0)
         {
             sprite.flipX = false;
+            Debug.Log("");
+            kick.transform.position = new Vector2(kick.transform.position.x + 2.5f, kick.transform.position.y);
         }
     }
     // For detecting when on ground and not

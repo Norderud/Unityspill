@@ -6,6 +6,7 @@ public class Player_Abilities : MonoBehaviour
     public Player_Controller player;
     public float speed = 3000f;
     public float cooldown = 1f;
+    public Collider2D kick;
 
     private float tTime = 0f;
     private int facing = 1;
@@ -21,6 +22,7 @@ public class Player_Abilities : MonoBehaviour
     {
         player.anim.SetBool("throw", false);
         player.anim.SetBool("attack", false);
+        player.anim.SetBool("smash", false);
         if (Input.GetButtonDown("Fire2"+wPlayer))
         {
             shoot();
@@ -28,6 +30,10 @@ public class Player_Abilities : MonoBehaviour
         if (Input.GetButtonDown("Fire1" + wPlayer))
         {
             attack();
+        }
+        if(Input.GetButtonDown("Fire3" + wPlayer))
+        {
+            smash();
         }
     }
     public void shoot()
@@ -50,5 +56,9 @@ public class Player_Abilities : MonoBehaviour
     public void attack()
     {
         player.anim.SetBool("attack", true);
+    }
+    public void smash()
+    {
+        player.anim.SetBool("smash", true);
     }
 }
