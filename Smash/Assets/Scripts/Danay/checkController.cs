@@ -16,7 +16,7 @@ public class checkController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (!gameObject.GetComponent<Stats>().dead) {
+        if (true) {
             if (script.enabled == false && timer > 0)
             {
                 timer--;

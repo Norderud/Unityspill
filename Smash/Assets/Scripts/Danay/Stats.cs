@@ -5,7 +5,6 @@ using UnityEngine;
 public class Stats : MonoBehaviour {
 
     public int health = 100;
-
     public bool dead = false;
 
 	// Use this for initialization

@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if ( chars.p1.GetComponent<Stats>().dead ||
+        if (chars.p1.GetComponent<Stats>().dead ||
                 chars.p2.GetComponent<Stats>().dead) {
             gameOver = true;
             GameOver();

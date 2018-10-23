@@ -44,7 +44,7 @@ public class Controller : MonoBehaviour {
 
         hitBox.GetComponent<BoxCollider2D>().enabled = false;
 
-        //Resets attack
+        // Resets attack
         if (attackStart > 0 && Time.time - attackStart > attackDuration) {
             attackStart = 0;
             hasAttacked = 0;
@@ -74,7 +74,6 @@ public class Controller : MonoBehaviour {
                 hitBox.transform.position = new Vector2(hitBox.transform.position.x - 2.5f, hitBox.transform.position.y);
             face = true;    // Changes the players direction to left
             sprite.flipX = face;
-
         }
         else if (horizontal > 0) {  // Player is facing right
             if (face)
