@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Controller : MonoBehaviour {
-    /// REFERANCES
+    /// REFERENCES
     public Transform position;      // Reference to position
     public Rigidbody2D rb;          // Reference to rigidbody
     public Animator animator;       // Reference to animator

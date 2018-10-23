@@ -15,10 +15,10 @@ public class checkController : MonoBehaviour {
                 timer--;
             else {
                 script.enabled = true;
+                script.rb.GetComponent<Danay_Input>().enabled = true;
                 timer = 50f;
             }
         }
-
     }
 }
 
