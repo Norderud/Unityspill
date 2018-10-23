@@ -8,6 +8,8 @@ public class Laser : MonoBehaviour {
     private float velY = 0;
     private Rigidbody2D rb;
     public static bool right;
+    public GameObject smoke;
+
 
 	// Use this for initialization
 	void Start () {
@@ -17,26 +19,24 @@ public class Laser : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-
+        
         rb.velocity = new Vector2(velX,velY);
         Destroy(gameObject, 3f);
 
-       
 	}
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider && collision.collider.tag != "Glenn")
+        if ( collision.collider.tag != "Glenn")
         {
+            GameObject myDashEffect = Instantiate(smoke, rb.transform.position, Quaternion.identity) as GameObject;
+           
             Destroy(gameObject, 0f);
-            if (right)
-            {
-                collision.collider.GetComponent<Rigidbody2D>().AddForce(new Vector2(8000,10));
-            }
-            else
-            {
-                collision.collider.GetComponent<Rigidbody2D>().AddForce(new Vector2(-8000, 10));
-            }            
+            Destroy(smoke.gameObject, 3f);
+
+
+
         }
+     
     }
 }
