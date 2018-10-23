@@ -20,9 +20,14 @@ public class Player_Abilities : MonoBehaviour
     private void Update()
     {
         player.anim.SetBool("throw", false);
-        if (Input.GetButtonDown("Fire1"+wPlayer))
+        player.anim.SetBool("attack", false);
+        if (Input.GetButtonDown("Fire2"+wPlayer))
         {
             shoot();
+        }
+        if (Input.GetButtonDown("Fire1" + wPlayer))
+        {
+            attack();
         }
     }
     public void shoot()
@@ -41,5 +46,9 @@ public class Player_Abilities : MonoBehaviour
         Vector2 startPos = new Vector2(player.GetComponent<Rigidbody2D>().position.x + (1.5f * facing), player.GetComponent<Rigidbody2D>().position.y);
         Instantiate(bullet, startPos, Quaternion.identity).GetComponent<Rigidbody2D>().AddForce(new Vector2(speed * facing, 0));
         tTime = Time.time + cooldown;
+    }
+    public void attack()
+    {
+        player.anim.SetBool("attack", true);
     }
 }
