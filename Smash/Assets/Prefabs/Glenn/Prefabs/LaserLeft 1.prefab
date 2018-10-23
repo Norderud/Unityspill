@@ -23,9 +23,9 @@ GameObject:
   - component: {fileID: 50652084461183390}
   - component: {fileID: 61679049009605476}
   - component: {fileID: 114669173841574506}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LaserLeft 1
-  m_TagString: Untagged
+  m_TagString: Bullets
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

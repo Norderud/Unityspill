@@ -15,6 +15,8 @@ public class Abilities : MonoBehaviour {
 
     public float fireRate = 0.5f;
     private float nextFire = 0.0f;
+
+    float triggerTime;
     
 
     // Use this for initialization
@@ -23,15 +25,24 @@ public class Abilities : MonoBehaviour {
             wPlayer = "-2";
         }
     }
-	
-	// Update is called once per frame
-	void Update () {
 
-        attackTriggerLeft.enabled = false;
-        attackTriggerRight.enabled = false;
+    // Update is called once per frame
+    void Update()
+    {
+     
+        if (triggerTime > 0)
+        {
+            triggerTime--;
+        }
+        else
+        {
+            attackTriggerLeft.enabled = false;
+            attackTriggerRight.enabled = false;
+        }
+    
         Kick();
         Shoot();
-    
+        
     }
 
 
@@ -40,19 +51,21 @@ public class Abilities : MonoBehaviour {
         ani.SetBool("Kick", false);
         if (Input.GetButtonDown("Fire1"+ wPlayer))
         {
+            
             if (sprite.flipX == false)
             {
-                attackTriggerRight.enabled = true;
+                attackTriggerRight.enabled = true;                
                 ani.SetBool("Kick", true);
                 ani.SetBool("Jump", false);
             }
             else
             {
-                attackTriggerLeft.enabled = true;
+                attackTriggerLeft.enabled = true;               
                 ani.SetBool("Kick", true);
                 ani.SetBool("Jump", false);
             }
 
+            triggerTime = 10f;
         }
    
     }

@@ -11,6 +11,7 @@ TagManager:
   - Weapon
   - Bullets
   - Shuriken
+  - Hitbox
   layers:
   - Default
   - TransparentFX
@@ -20,9 +21,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - RangeWeapon
   - Ground
-  - 
+  - Hitbox
   - 
   - 
   - 

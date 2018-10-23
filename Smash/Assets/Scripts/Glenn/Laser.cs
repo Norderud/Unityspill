@@ -9,6 +9,7 @@ public class Laser : MonoBehaviour {
     private Rigidbody2D rb;
     public static bool right;
     public GameObject smoke;
+    
 
 
 	// Use this for initialization
@@ -29,13 +30,14 @@ public class Laser : MonoBehaviour {
     {
         if ( collision.collider.tag != "Glenn")
         {
-            GameObject myDashEffect = Instantiate(smoke, rb.transform.position, Quaternion.identity) as GameObject;
-           
+            GameObject myDashEffect = Instantiate(smoke, rb.transform.position, Quaternion.identity) as GameObject;  // adds smoke when laser hit         
             Destroy(gameObject, 0f);
-            Destroy(smoke.gameObject, 3f);
+            collision.collider.GetComponent<Stats>().TakeDmg(10); // add damage to enemy
 
-
-
+        }
+        else
+        {
+            return;
         }
      
     }
