@@ -271,8 +271,8 @@ MonoBehaviour:
   ani: {fileID: 95196070180501840}
   sprite: {fileID: 212122189585759172}
   player: {fileID: 4797755711968008}
-  laserR: {fileID: 1406671416834532, guid: e3be6f0eafb506742a3345fd23f93231, type: 2}
-  laserL: {fileID: 1852947997937508, guid: 82121c7298ed7e94192e087797e0b2d1, type: 2}
+  laserR: {fileID: 1087706244203940, guid: b15342579acf4f145908dbb6ddd5f16a, type: 2}
+  laserL: {fileID: 1395272578170844, guid: bda0944ae6812fd4f8d1029835f5c8e7, type: 2}
   wPlayer: 
   attackTriggerRight: {fileID: 61710602219529126}
   attackTriggerLeft: {fileID: 61669870744773214}

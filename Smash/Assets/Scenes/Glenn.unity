@@ -1823,6 +1823,26 @@ Prefab:
       propertyPath: m_Name
       value: Robot
       objectReference: {fileID: 0}
+    - target: {fileID: 4104640165596146, guid: b4e0f69ce05143c41b3b8fcd2078970f, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521367670619192, guid: b4e0f69ce05143c41b3b8fcd2078970f, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114165339968650456, guid: b4e0f69ce05143c41b3b8fcd2078970f,
+        type: 2}
+      propertyPath: laserL
+      value: 
+      objectReference: {fileID: 1395272578170844, guid: bda0944ae6812fd4f8d1029835f5c8e7,
+        type: 2}
+    - target: {fileID: 114165339968650456, guid: b4e0f69ce05143c41b3b8fcd2078970f,
+        type: 2}
+      propertyPath: laserR
+      value: 
+      objectReference: {fileID: 1087706244203940, guid: b15342579acf4f145908dbb6ddd5f16a,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4e0f69ce05143c41b3b8fcd2078970f, type: 2}
   m_IsPrefabAsset: 0
