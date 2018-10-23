@@ -8,8 +8,6 @@ public class Danay_Input : MonoBehaviour {
     public Boomerang boomerang;     // Reference to boomerang
     public Controller move;         // Referance to movement
     public Attack attack;
-
-
     public string player;           // Referance to if the character is player1 or player2
 
     // Use this for initialization

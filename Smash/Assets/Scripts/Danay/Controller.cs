@@ -20,7 +20,6 @@ public class Controller : MonoBehaviour {
     // Condition variables
     public bool face = false;       // Determines which way the player faces. false = right
     public bool grounded = true;   // Determines if the player is in the air or not
-    private bool jump = false;      // Is the player about to jump
 
     private int hasAirJumped = 0;   // 0 = grounded / 1 = in the air / 2 = has air jumped
     public float horizontal = 0;   // Detects if player is moving left/right. -1 is left, 1 is right
