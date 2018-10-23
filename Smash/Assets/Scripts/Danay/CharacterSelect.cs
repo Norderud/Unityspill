@@ -10,8 +10,7 @@ public class CharacterSelect : MonoBehaviour {
 
     private int playerSelect = 0;
 
-    private void Start()
-    {
+    private void Start() {
         // Resets playerprefs
         PlayerPrefs.DeleteKey("Player1");
         PlayerPrefs.DeleteKey("Player2");

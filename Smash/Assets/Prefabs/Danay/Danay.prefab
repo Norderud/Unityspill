@@ -58,11 +58,12 @@ GameObject:
   - component: {fileID: 212158037105895332}
   - component: {fileID: 50540418811343808}
   - component: {fileID: 95091628863560340}
+  - component: {fileID: 70594173477410220}
   - component: {fileID: 114954372413317912}
   - component: {fileID: 114636437793741032}
   - component: {fileID: 114667766702111290}
   - component: {fileID: 114157506068959822}
-  - component: {fileID: 70594173477410220}
+  - component: {fileID: 114431139754177064}
   m_Layer: 0
   m_Name: Danay
   m_TagString: Danay
@@ -416,6 +417,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   dead: 0
+--- !u!114 &114431139754177064
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1807000718351392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bb7a052c19a0d949aaa618953c3f99a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  script: {fileID: 114954372413317912}
 --- !u!114 &114636437793741032
 MonoBehaviour:
   m_ObjectHideFlags: 1

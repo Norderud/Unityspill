@@ -40,7 +40,7 @@ public class Dash : MonoBehaviour {
                 animator.SetBool("IsDashing", true);    // dash animation
                 rb.GetComponent<Danay_Input>().enabled = false;   // disables user input while dashing
                 Vector2 dashLocation = new Vector2(rb.position.x, rb.position.y - 2);   // Location for dasheffect
-                GameObject myDashEffect = Instantiate(dashEffect, dashLocation, Quaternion.identity) as GameObject; // Instantiates a dash effect using prefab
+                GameObject myDashEffect = Instantiate(dashEffect, dashLocation, Quaternion.identity); // Instantiates a dash effect using prefab
                 myDashEffect.transform.parent = rb.transform;   // sets dash effect as child to follow the player
             }
         }
