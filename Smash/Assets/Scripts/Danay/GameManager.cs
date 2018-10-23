@@ -11,11 +11,11 @@ public class GameManager : MonoBehaviour {
     // Use this for initialization
     void Start() {
         chars.EnablePlayers(true);
+        Time.timeScale = 1f;
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         if (chars.p1.GetComponent<Stats>().dead ||
                 chars.p2.GetComponent<Stats>().dead) {
             gameOver = true;

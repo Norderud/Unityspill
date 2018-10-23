@@ -63,6 +63,5 @@ public class Attack : MonoBehaviour {
             hitBox.transform.position = new Vector2(hitBox.transform.position.x + 2.5f, hitBox.transform.position.y);
         else
             hitBox.transform.position = new Vector2(hitBox.transform.position.x - 2.5f, hitBox.transform.position.y);
-
     }
 }

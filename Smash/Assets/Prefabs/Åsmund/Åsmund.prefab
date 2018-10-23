@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 114361795137600058}
   - component: {fileID: 95094106016530176}
   - component: {fileID: 114552410161315632}
+  - component: {fileID: 114447911700796014}
   m_Layer: 0
   m_Name: "\xC5smund"
   m_TagString: "\xC5smund"
@@ -142,6 +143,19 @@ MonoBehaviour:
   anim: {fileID: 95094106016530176}
   sprite: {fileID: 212528801024843808}
   player: 
+--- !u!114 &114447911700796014
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1721220877765840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d33198bb9c8006409efe0a32f31c4aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  dead: 0
 --- !u!114 &114552410161315632
 MonoBehaviour:
   m_ObjectHideFlags: 1
