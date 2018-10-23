@@ -25,5 +25,6 @@ public class GameManager : MonoBehaviour {
 
     public void GameOver() {
         chars.EnablePlayers(false);
+        Time.timeScale = 0f;
     }
 }
