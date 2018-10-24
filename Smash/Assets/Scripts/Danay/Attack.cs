@@ -18,8 +18,9 @@ public class Attack : MonoBehaviour {
     //Attack duration/combo variables
     private int hasAttacked = 0;
     private float attackStart = 0;
-    private float attackDuration = 0.4f;
+    private float attackDuration = 0.5f;
     private float hitDuration = 0.02f; // Hitbox activation duration
+    private float coolDown = 0.25f;
 
     void Update() {
 
@@ -31,6 +32,7 @@ public class Attack : MonoBehaviour {
             attackStart = 0;
             hasAttacked = 0;
             animator.SetInteger("hasAttacked", hasAttacked);
+            controller.gameObject.GetComponent<Danay_Input>().EnableMove(true);
         }
     }
 
@@ -55,7 +57,11 @@ public class Attack : MonoBehaviour {
     }
 
     public void Attacking() {
-        if (hasAttacked < 3) { // Attack
+        if (hasAttacked < 3 && Time.time - attackStart > coolDown) { // Attack cd
+            if (controller.grounded) {  // Disables movement and stops the player
+                controller.gameObject.GetComponent<Danay_Input>().EnableMove(false);
+                controller.horizontal = 0;
+            }
             FindObjectOfType<AudioManager>().Play("hit" + (hasAttacked+1));
             hitBox.GetComponent<BoxCollider2D>().enabled = true;
             hasAttacked++;

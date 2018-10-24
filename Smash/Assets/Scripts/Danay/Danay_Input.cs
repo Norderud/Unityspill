@@ -10,6 +10,9 @@ public class Danay_Input : MonoBehaviour {
     public Attack attack;
     public string player;           // Referance to if the character is player1 or player2
 
+    [HideInInspector]
+    public bool moveInput = true;
+
     // Use this for initialization
     void Start () {
         if (PlayerPrefs.GetString("Player2tag") == "Danay")
@@ -36,7 +39,8 @@ public class Danay_Input : MonoBehaviour {
         }
 
         // Movement
-        move.horizontal = Input.GetAxis("Horizontal" + player); // Gets input for horizontal movement
+        if (moveInput)
+            move.horizontal = Input.GetAxis("Horizontal" + player); // Gets input for horizontal movement
 
     }
 
@@ -47,5 +51,8 @@ public class Danay_Input : MonoBehaviour {
         boomerang.trail.enabled = false;    // Enables trail effect
     }
 
+    public void EnableMove(bool enable) {
+        moveInput = enable;
+    }
 
 }

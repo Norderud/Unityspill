@@ -518,8 +518,13 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: dash
     clip: {fileID: 8300000, guid: e52869ca74c04314991e7e19df49691c, type: 3}
-    volume: 0.15
-    pitch: 2.07
+    volume: 0.05
+    pitch: 1.65
+    source: {fileID: 0}
+  - name: walk
+    clip: {fileID: 0}
+    volume: 0.19
+    pitch: 0.95
     source: {fileID: 0}
 --- !u!4 &859102340
 Transform:

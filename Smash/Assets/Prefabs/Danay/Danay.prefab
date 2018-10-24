@@ -541,6 +541,7 @@ MonoBehaviour:
   move: {fileID: 114954372413317912}
   attack: {fileID: 114806824916739612}
   player: 
+  moveInput: 1
 --- !u!114 &114667766702111290
 MonoBehaviour:
   m_ObjectHideFlags: 1
