@@ -13,6 +13,7 @@ public class Player_Controller : MonoBehaviour {
     public float speed = 400f;
     public Animator anim;
     public SpriteRenderer sprite;
+    public Collider2D kick;
 
     public string player;           // Reference to if the character is player1 or player2
 
