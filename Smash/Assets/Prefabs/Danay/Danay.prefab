@@ -498,8 +498,8 @@ MonoBehaviour:
   trail: {fileID: 96166676801153252}
   boomerang: {fileID: 1415884810634536}
   fire: 0
-  distance: 10
-  startSpeed: 60
+  distance: 20
+  startSpeed: 40
 --- !u!114 &114157506068959822
 MonoBehaviour:
   m_ObjectHideFlags: 1
