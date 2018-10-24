@@ -53,10 +53,7 @@ public class GameManager : MonoBehaviour {
     }
 
     public void LoadCharSelect() {
-<<<<<<< HEAD
         FindObjectOfType<AudioManager>().Play("Knapp");
-=======
->>>>>>> 7391cf938b5c5569ea82b2cf9ebb1fa8ddbeff26
         SceneManager.LoadScene("CharacterSelect");
     }
 }
