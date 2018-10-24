@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour {
 
     public CharacterSpawner chars;
-
     public Image p1health, p2health;
 
 	// Update is called once per frame

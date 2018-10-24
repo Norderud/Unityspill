@@ -39,6 +39,7 @@ public class CharacterSelect : MonoBehaviour {
 
     // Loads the game scene
     public void LoadScene() {
+        FindObjectOfType<AudioManager>().Play("Knapp");
         if (playerSelect == 2)
             SceneManager.LoadScene("Danay");
     }

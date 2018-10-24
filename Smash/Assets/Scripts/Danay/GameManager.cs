@@ -48,10 +48,11 @@ public class GameManager : MonoBehaviour {
         endText.text = "Player " + winner + " wins!";
         button.GetComponent<Image>().enabled = true;
         buttontxt.text = "Play Again";
+        button.GetComponent<Button>().enabled = true;
     }
 
     public void LoadCharSelect() {
-        print("y");
+        FindObjectOfType<AudioManager>().Play("Knapp");
         SceneManager.LoadScene("CharacterSelect");
     }
 }

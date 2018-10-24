@@ -56,6 +56,7 @@ public class Attack : MonoBehaviour {
 
     public void Attacking() {
         if (hasAttacked < 3) { // Attack
+            FindObjectOfType<AudioManager>().Play("hit" + (hasAttacked+1));
             hitBox.GetComponent<BoxCollider2D>().enabled = true;
             hasAttacked++;
             attackStart = Time.time;
