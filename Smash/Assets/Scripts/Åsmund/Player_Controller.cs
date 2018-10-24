@@ -63,13 +63,10 @@ public class Player_Controller : MonoBehaviour {
         if (horizontal < 0)
         {
             sprite.flipX = true;
-            kick.transform.position = new Vector2(kick.transform.position.x - 2.5f, kick.transform.position.y);
         }
         else if (horizontal > 0)
         {
             sprite.flipX = false;
-            Debug.Log("");
-            kick.transform.position = new Vector2(kick.transform.position.x + 2.5f, kick.transform.position.y);
         }
     }
     // For detecting when on ground and not

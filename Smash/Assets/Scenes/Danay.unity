@@ -247,6 +247,7 @@ MonoBehaviour:
   chars: {fileID: 318696261}
   endText: {fileID: 1576621067}
   button: {fileID: 1856475045}
+  buttontxt: {fileID: 1998992260}
 --- !u!114 &318696264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2984,7 +2985,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1856475044
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3010,7 +3011,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1856475043}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -3062,7 +3063,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1856475043}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -3234,7 +3235,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Play Again
+  m_Text: 
 --- !u!222 &1998992261
 CanvasRenderer:
   m_ObjectHideFlags: 0

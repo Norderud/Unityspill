@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour {
     void Update() {
         if ((chars.p1.GetComponent<Stats>().dead ||
                 chars.p2.GetComponent<Stats>().dead) && !gameOver) {
-            gameOver = true;
+            gameOver = true; 
             GameOver();
         }
         if (gameOver && Time.time - slomoStart > slomoDur)    // Freezes time after number of frames exceedes duration
@@ -47,11 +47,11 @@ public class GameManager : MonoBehaviour {
         }
         endText.text = "Player " + winner + " wins!";
         button.GetComponent<Image>().enabled = true;
+        button.GetComponent<Button>().enabled = true;
         buttontxt.text = "Play Again";
     }
 
     public void LoadCharSelect() {
-        print("y");
         SceneManager.LoadScene("CharacterSelect");
     }
 }
