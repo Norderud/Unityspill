@@ -7,6 +7,7 @@ public class Attack : MonoBehaviour {
     public Controller controller;   // Referance to movement 
     public Animator animator;       // Reference to animator
     public GameObject hitBox;       // Referance to hitBox
+    public GameObject blood;    // Blood particle
 
     //Hitbox/force variables
     public float force = 12000;    
@@ -39,14 +40,22 @@ public class Attack : MonoBehaviour {
             if (controller.face) direction = -1;
             else direction = 1;
             isHitting = true;
+            Vector2 pos = collision.GetComponent<Transform>().position;
+            GameObject bloodEffect;
             switch (collision.tag) {
                 case ("Åsmund"):
                     collision.gameObject.GetComponent<Player_Controller>().enabled = false;
                     collision.gameObject.GetComponent<Stats>().TakeDmg(10);
+                    bloodEffect = Instantiate(blood, pos, Quaternion.identity) as GameObject;
+                    bloodEffect.transform.parent = collision.GetComponent<Rigidbody2D>().transform;
+                    FindObjectOfType<AudioManager>().Play("bam");
                     break;
                 case ("Glenn"):
                     collision.gameObject.GetComponent<Movement>().enabled = false;
                     collision.gameObject.GetComponent<Stats>().TakeDmg(10);
+                    bloodEffect = Instantiate(blood, pos, Quaternion.identity);
+                    bloodEffect.transform.parent = collision.GetComponent<Rigidbody2D>().transform;
+                    FindObjectOfType<AudioManager>().Play("bam");
                     break;
             }
             if (hasAttacked < 3)

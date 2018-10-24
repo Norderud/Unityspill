@@ -526,6 +526,11 @@ MonoBehaviour:
     volume: 0.19
     pitch: 0.95
     source: {fileID: 0}
+  - name: bam
+    clip: {fileID: 8300000, guid: 0789479bb36688d418eba3f449224109, type: 3}
+    volume: 0.04
+    pitch: 1.61
+    source: {fileID: 0}
 --- !u!4 &859102340
 Transform:
   m_ObjectHideFlags: 0

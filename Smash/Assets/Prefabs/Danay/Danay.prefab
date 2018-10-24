@@ -620,6 +620,7 @@ MonoBehaviour:
   controller: {fileID: 114823233544846004}
   animator: {fileID: 95544805250821844}
   hitBox: {fileID: 1570958202579520}
+  blood: {fileID: 1676508984337126, guid: e71471363216f1f4fbe4a7e4ee5058b9, type: 2}
   force: 1000
 --- !u!212 &212431152982728122
 SpriteRenderer:
