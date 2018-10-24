@@ -9,7 +9,7 @@ public class Attack : MonoBehaviour {
     public GameObject hitBox;       // Referance to hitBox
 
     //Hitbox/force variables
-    public float force = 50;    
+    public float force = 12000;    
     private float duration = 0.3f;
     private bool isHitting;
     private GameObject treff;
@@ -29,50 +29,61 @@ public class Attack : MonoBehaviour {
 
         // Resets attack
         if (attackStart > 0 && Time.time - attackStart > attackDuration) {
-            attackStart = 0;
-            hasAttacked = 0;
-            animator.SetInteger("hasAttacked", hasAttacked);
-            controller.gameObject.GetComponent<Danay_Input>().EnableMove(true);
+            ResetAttack();
         }
     }
 
 
-    void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.collider.tag != "Danay" ) {
+    void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.tag != "Danay" ) {
             if (controller.face) direction = -1;
             else direction = 1;
             isHitting = true;
-            switch (collision.collider.tag) {
+            switch (collision.tag) {
                 case ("Åsmund"):
-                    collision.collider.gameObject.GetComponent<Player_Controller>().enabled = false;
-                    collision.collider.gameObject.GetComponent<Stats>().TakeDmg(10);
+                    collision.gameObject.GetComponent<Player_Controller>().enabled = false;
+                    collision.gameObject.GetComponent<Stats>().TakeDmg(10);
                     break;
                 case ("Glenn"):
-                    collision.collider.gameObject.GetComponent<Movement>().enabled = false;
-                    collision.collider.gameObject.GetComponent<Stats>().TakeDmg(10);
+                    collision.gameObject.GetComponent<Movement>().enabled = false;
+                    collision.gameObject.GetComponent<Stats>().TakeDmg(10);
                     break;
             }
-            collision.collider.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(force*direction, force*10));
+            if (hasAttacked < 3)
+                collision.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector3(0, 0));
+            else
+                collision.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector3(force * direction, force));
         }
     }
 
+
     public void Attacking() {
         if (hasAttacked < 3 && Time.time - attackStart > coolDown) { // Attack cd
-            if (controller.grounded) {  // Disables movement and stops the player
+            if (controller.grounded)
+            {  // Disables movement and stops the player
                 controller.gameObject.GetComponent<Danay_Input>().EnableMove(false);
                 controller.horizontal = 0;
+                hasAttacked++;
             }
-            FindObjectOfType<AudioManager>().Play("hit" + (hasAttacked+1));
+            else
+                hasAttacked = 3;
+            FindObjectOfType<AudioManager>().Play("hit" + (hasAttacked));
             hitBox.GetComponent<BoxCollider2D>().enabled = true;
-            hasAttacked++;
             attackStart = Time.time;
             animator.SetInteger("hasAttacked", hasAttacked);
         }
     }
     public void MoveHitBox(bool direction) {
         if (direction)
-            hitBox.transform.position = new Vector2(hitBox.transform.position.x + 2.5f, hitBox.transform.position.y);
+            hitBox.transform.position = new Vector2(hitBox.transform.position.x + 1.8f, hitBox.transform.position.y);
         else
-            hitBox.transform.position = new Vector2(hitBox.transform.position.x - 2.5f, hitBox.transform.position.y);
+            hitBox.transform.position = new Vector2(hitBox.transform.position.x - 1.8f, hitBox.transform.position.y);
+    }
+
+    public void ResetAttack() {
+        attackStart = 0;
+        hasAttacked = 0;
+        animator.SetInteger("hasAttacked", hasAttacked);
+        controller.gameObject.GetComponent<Danay_Input>().EnableMove(true);
     }
 }

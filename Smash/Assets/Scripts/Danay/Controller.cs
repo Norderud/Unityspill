@@ -47,8 +47,9 @@ public class Controller : MonoBehaviour {
 
     // Handles walking left or right
     void HandleMovement(float move) {
-        if (move != 0 && grounded)
+        if (move != 0 && grounded) {
             FindObjectOfType<AudioManager>().Play("walk");
+        }
         animator.SetFloat("JumpSpeed", rb.velocity.y); // Tells the animator if the player is jumping up or falling down
         animator.SetFloat("Speed", Mathf.Abs(move));    // Animates if player is moving
         Vector3 moving = new Vector2(move * m_speed * Time.fixedDeltaTime, rb.velocity.y);  // Vector for moving the player
