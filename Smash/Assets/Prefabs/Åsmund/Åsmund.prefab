@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4898910851752542}
   - component: {fileID: 212611063092383208}
   - component: {fileID: 61761894071990408}
+  - component: {fileID: 114014051089467398}
   m_Layer: 0
   m_Name: kick
   m_TagString: Untagged
@@ -71,7 +72,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1548603220510372}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 262.01855, y: 0.27699995, z: 0}
+  m_LocalPosition: {x: 0, y: 0.27699995, z: 0}
   m_LocalScale: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
   m_Children: []
   m_Father: {fileID: 4872709092997882}
@@ -103,13 +104,13 @@ BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1548603220510372}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.08148348, y: -0.19012833}
+  m_Offset: {x: 1.0154834, y: -0.86094236}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -120,7 +121,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.901296, y: 2.0321274}
+  m_Size: {x: 2.7771826, y: 3.173152}
   m_EdgeRadius: 0
 --- !u!70 &70952330466319070
 CapsuleCollider2D:
@@ -134,8 +135,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.32465014, y: -0.02750973}
-  m_Size: {x: 0.7567482, y: 0.7567484}
+  m_Offset: {x: -0.016175708, y: 0.009807269}
+  m_Size: {x: 0.46916556, y: 1.1112547}
   m_Direction: 0
 --- !u!95 &95094106016530176
 Animator:
@@ -155,6 +156,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114014051089467398
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1548603220510372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d023acf16fb10f4b8ab13ac3d55afc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  col: {fileID: 61761894071990408}
+  attackDuration: 0.2
 --- !u!114 &114361795137600058
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -172,7 +186,7 @@ MonoBehaviour:
   speed: 1500
   anim: {fileID: 95094106016530176}
   sprite: {fileID: 212528801024843808}
-  kick: {fileID: 0}
+  kick: {fileID: 61761894071990408}
   player: 
 --- !u!114 &114447911700796014
 MonoBehaviour:
@@ -202,7 +216,7 @@ MonoBehaviour:
   player: {fileID: 114361795137600058}
   speed: 3000
   cooldown: 0.5
-  kick: {fileID: 0}
+  kick: {fileID: 114014051089467398}
 --- !u!212 &212528801024843808
 SpriteRenderer:
   m_ObjectHideFlags: 1

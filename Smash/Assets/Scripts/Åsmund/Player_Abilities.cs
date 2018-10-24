@@ -42,7 +42,6 @@ public class Player_Abilities : MonoBehaviour
 
     public void shoot()
     {
-
         if (tTime > Time.time) return;
         player.anim.SetBool("throw", true);
         Vector2 startPos = new Vector2(player.GetComponent<Rigidbody2D>().position.x + (1.5f * facing), player.GetComponent<Rigidbody2D>().position.y);
@@ -52,6 +51,7 @@ public class Player_Abilities : MonoBehaviour
     public void attack()
     {
         kick.moveCollider(facing);
+        kick.kick();
         player.anim.SetBool("attack", true);
     }
     public void smash()
