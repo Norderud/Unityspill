@@ -511,6 +511,11 @@ MonoBehaviour:
     volume: 0.52
     pitch: 1.57
     source: {fileID: 0}
+  - name: Knapp
+    clip: {fileID: 8300000, guid: 7788b359d6abc1046bfd6d1512d94c78, type: 3}
+    volume: 0.52
+    pitch: 1.57
+    source: {fileID: 0}
 --- !u!4 &859102340
 Transform:
   m_ObjectHideFlags: 0
