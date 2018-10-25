@@ -214,8 +214,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   players:
-  - {fileID: 1807000718351392, guid: 0be22fc4887d59e49ad3a66aa3dc9c16, type: 2}
-  - {fileID: 1867205261353758, guid: b4e0f69ce05143c41b3b8fcd2078970f, type: 2}
+  - {fileID: 1071511699266576, guid: 0be22fc4887d59e49ad3a66aa3dc9c16, type: 2}
+  - {fileID: 1364939984945944, guid: 4dfd54604c87ecd4185d7298aac001f4, type: 2}
   - {fileID: 1721220877765840, guid: e48112870b44df74e9b9981fbae048de, type: 2}
   p1: {fileID: 0}
   p2: {fileID: 0}
@@ -522,9 +522,34 @@ MonoBehaviour:
     pitch: 1.65
     source: {fileID: 0}
   - name: walk
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 597abb1856c116141ba4287596481ded, type: 3}
     volume: 0.19
     pitch: 0.95
+    source: {fileID: 0}
+  - name: bam
+    clip: {fileID: 8300000, guid: 0789479bb36688d418eba3f449224109, type: 3}
+    volume: 0.04
+    pitch: 1.61
+    source: {fileID: 0}
+  - name: splatt
+    clip: {fileID: 8300000, guid: 1011fed4ad994a841bb4eb5e942fbb4d, type: 3}
+    volume: 0.52
+    pitch: 0.99
+    source: {fileID: 0}
+  - name: Laser
+    clip: {fileID: 8300000, guid: a097c62166563a0469e9da818c2cd5ed, type: 3}
+    volume: 0.52
+    pitch: 0.99
+    source: {fileID: 0}
+  - name: dJump
+    clip: {fileID: 8300000, guid: 4431ced57bddafa4f826841f2e95775c, type: 3}
+    volume: 0.025
+    pitch: 0.89
+    source: {fileID: 0}
+  - name: Jetpack
+    clip: {fileID: 8300000, guid: 79fa0652367954d4687118236d9a61ca, type: 3}
+    volume: 0.52
+    pitch: 0.99
     source: {fileID: 0}
 --- !u!4 &859102340
 Transform:

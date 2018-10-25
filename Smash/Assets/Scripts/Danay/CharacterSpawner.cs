@@ -6,6 +6,7 @@ public class CharacterSpawner : MonoBehaviour {
 
     public GameObject[] players;
 
+    [HideInInspector]
     public GameObject p1, p2;
 
 	// Use this for initialization

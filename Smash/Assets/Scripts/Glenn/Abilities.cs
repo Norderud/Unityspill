@@ -17,6 +17,9 @@ public class Abilities : MonoBehaviour {
     private float nextFire = 0.0f;
 
     float triggerTime;
+
+    float kickCooldown = 0.4f;
+    float nextKick = 0.0f;
     
 
     // Use this for initialization
@@ -49,7 +52,7 @@ public class Abilities : MonoBehaviour {
     private void Kick()
     {
         ani.SetBool("Kick", false);
-        if (Input.GetButtonDown("Fire1"+ wPlayer))
+        if (Input.GetButtonDown("Fire1"+ wPlayer) && Time.time > nextKick)
         {
             
             if (sprite.flipX == false)
@@ -64,8 +67,9 @@ public class Abilities : MonoBehaviour {
                 ani.SetBool("Kick", true);
                 ani.SetBool("Jump", false);
             }
-
+            FindObjectOfType<AudioManager>().Play("Kick");
             triggerTime = 10f;
+            nextKick = Time.time + kickCooldown;
         }
    
     }
@@ -81,6 +85,7 @@ public class Abilities : MonoBehaviour {
             ani.SetBool("Jump", false);
             nextFire = Time.time + fireRate;           
             laserPos = player.position;
+            FindObjectOfType<AudioManager>().Play("Laser"); // plays laser sound
             if (sprite.flipX == true)
             {
                 laserL.GetComponent<SpriteRenderer>().flipX = true;

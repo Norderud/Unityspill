@@ -42,6 +42,7 @@ public class Boomerang : MonoBehaviour {
         speed = startSpeed; // Resets speed
         fire = false;   // Is no longer fired
         boomerang.SetActive(false); // Deactivated
+        startDist = 0;
     }
 
 	// Update is called once per frame
@@ -76,11 +77,9 @@ public class Boomerang : MonoBehaviour {
         
     }
     private void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.gameObject.tag == "Danay") {
+        if (collision.gameObject.tag == "Danay") 
             Reset();    // Resets the values
-        }
         if (collision.gameObject.GetComponent<Rigidbody2D>() == null) return;
-
         if (collision.gameObject.tag != "Danay" && collision.gameObject.tag != "Weapon") { // If the boomerang hits something 
             returning = true;   // Is currently returning
             speed *= -1;    // Turns the boomerang around
@@ -90,10 +89,12 @@ public class Boomerang : MonoBehaviour {
                 case ("Åsmund"):
                     collision.gameObject.GetComponent<Player_Controller>().enabled = false;
                     collision.gameObject.GetComponent<Stats>().TakeDmg(10);
+                    FindObjectOfType<AudioManager>().Play("bam");
                     break;
                 case ("Glenn"):
                     collision.gameObject.GetComponent<Movement>().enabled = false;
                     collision.gameObject.GetComponent<Stats>().TakeDmg(10);
+                    FindObjectOfType<AudioManager>().Play("bam");
                     break;
             }
             collision.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(50 * direction, 50 * 10));
