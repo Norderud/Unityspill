@@ -1,10 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-<<<<<<< HEAD
-=======
 using System;
->>>>>>> 9c3da05aff388ad4392a616aea7d9e4b6d1b25c1
+
 
 public class Stats : MonoBehaviour {
 
@@ -31,28 +29,22 @@ public class Stats : MonoBehaviour {
             isHit = false;
             startTime = 0;
         }
-        gameObject.GetComponent<Animator>().SetBool("IsHit", isHit);
+        if (gameObject.tag == "Danay")
+            gameObject.GetComponent<Animator>().SetBool("IsHit", isHit);
     }
 
     public void TakeDmg(int dmg) {
         health -= dmg;
         startTime = Time.time;
-        isHit = true;
-<<<<<<< HEAD
-        if (gameObject.tag == "Glenn") {
-            FindObjectOfType<AudioManager>().Play("Dmg");
-            Random rnd = new Random();
-            string[] sound = {"Dmg", "Dmg2", "Dmg3"};
-            FindObjectOfType<AudioManager>().Play("Dmg");
-=======
+        if (dmg > 5)
+            isHit = true;
         if (gameObject.tag == "Glenn")
         {
             System.Random rnd = new System.Random();
             int s = rnd.Next(0,3);
-                    
             string[] sound = {"Dmg", "Dmg2", "Dmg3"};
             FindObjectOfType<AudioManager>().Play(sound[s]);
->>>>>>> 9c3da05aff388ad4392a616aea7d9e4b6d1b25c1
+
         }
     }
 }

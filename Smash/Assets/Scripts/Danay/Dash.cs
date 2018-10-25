@@ -22,7 +22,9 @@ public class Dash : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        //dashTime = startDashTime;
+        dashTime = startDashTime;
+        dashSpeed = 180;
+        controls.enabled = true;
 	}
 
     // Update is called once per frame

@@ -30,6 +30,11 @@ public class GameManager : MonoBehaviour {
         }
         if (gameOver && Time.time - slomoStart > slomoDur)    // Freezes time after number of frames exceedes duration
             Time.timeScale = 0f;
+        if (chars.p1.GetComponent<Rigidbody2D>().position.y < -20)
+            chars.p1.GetComponent<Stats>().health = 0;
+        if (chars.p2.GetComponent<Rigidbody2D>().position.y < -20)
+            chars.p2.GetComponent<Stats>().health = 0;
+
     }
 
     public void GameOver() {
