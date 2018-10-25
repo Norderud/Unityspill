@@ -12,7 +12,7 @@ public class Attack : MonoBehaviour {
     //Hitbox/force variables
     public float force = 12000;    
     private float duration = 0.3f;
-    private bool isHitting;
+    private bool isHitting, hasHit;
     private GameObject treff;
     private int direction;
 
@@ -22,6 +22,7 @@ public class Attack : MonoBehaviour {
     private float attackDuration = 0.5f;
     private float hitDuration = 0.02f; // Hitbox activation duration
     private float coolDown = 0.25f;
+    private float freezeDur = 0.08f;
 
     void Update() {
 
@@ -31,6 +32,11 @@ public class Attack : MonoBehaviour {
         // Resets attack
         if (attackStart > 0 && Time.time - attackStart > attackDuration) {
             ResetAttack();
+        }
+
+        if (Time.time - attackStart > freezeDur && hasHit) {
+            Time.timeScale = 1f;
+            hasHit = false;
         }
     }
 
@@ -49,19 +55,19 @@ public class Attack : MonoBehaviour {
                     bloodEffect = Instantiate(blood, pos, Quaternion.identity) as GameObject;
                     bloodEffect.transform.parent = collision.GetComponent<Rigidbody2D>().transform;
                     FindObjectOfType<AudioManager>().Play("bam");
+                    FindObjectOfType<AudioManager>().Play("splatt");
+                    Time.timeScale = 0;
+                    hasHit = true;
                     break;
                 case ("Glenn"):
-<<<<<<< HEAD
-                    collision.collider.gameObject.GetComponent<Movement>().enabled = false;
-                    collision.collider.gameObject.GetComponent<Stats>().TakeDmg(10);
-                    collision.collider.GetComponent<Stats>().knockedLeft = true;
-=======
                     collision.gameObject.GetComponent<Movement>().enabled = false;
                     collision.gameObject.GetComponent<Stats>().TakeDmg(10);
                     bloodEffect = Instantiate(blood, pos, Quaternion.identity);
                     bloodEffect.transform.parent = collision.GetComponent<Rigidbody2D>().transform;
                     FindObjectOfType<AudioManager>().Play("bam");
->>>>>>> 58162a71cdc2d0d0faae5d8777f824d7efed6b99
+                    FindObjectOfType<AudioManager>().Play("splatt");
+                    Time.timeScale = 0.5f;
+                    hasHit = true;
                     break;
             }
             if (hasAttacked < 3)
@@ -73,10 +79,6 @@ public class Attack : MonoBehaviour {
 
 
     public void Attacking() {
-<<<<<<< HEAD
-        if (hasAttacked < 3) { // Attack
- //           FindObjectOfType<AudioManager>().Play("hit" + (hasAttacked+1));
-=======
         if (hasAttacked < 3 && Time.time - attackStart > coolDown) { // Attack cd
             if (controller.grounded)
             {  // Disables movement and stops the player
@@ -87,7 +89,6 @@ public class Attack : MonoBehaviour {
             else
                 hasAttacked = 3;
             FindObjectOfType<AudioManager>().Play("hit" + (hasAttacked));
->>>>>>> 58162a71cdc2d0d0faae5d8777f824d7efed6b99
             hitBox.GetComponent<BoxCollider2D>().enabled = true;
             attackStart = Time.time;
             animator.SetInteger("hasAttacked", hasAttacked);
