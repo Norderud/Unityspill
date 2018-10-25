@@ -551,6 +551,16 @@ MonoBehaviour:
     volume: 0.52
     pitch: 0.99
     source: {fileID: 0}
+  - name: Dmg
+    clip: {fileID: 8300000, guid: 2a3a39e1589312b44b643a4b1d6cbed2, type: 3}
+    volume: 0.52
+    pitch: 0.99
+    source: {fileID: 0}
+  - name: Kick
+    clip: {fileID: 8300000, guid: 01f9753b45a0517488c57f1dc9cd635c, type: 3}
+    volume: 0.52
+    pitch: 0.99
+    source: {fileID: 0}
 --- !u!4 &859102340
 Transform:
   m_ObjectHideFlags: 0

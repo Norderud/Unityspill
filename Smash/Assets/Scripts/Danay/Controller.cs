@@ -41,6 +41,7 @@ public class Controller : MonoBehaviour {
             sprite.flipX = face;
         }
 
+        // Disables walking sound
         if(!grounded || horizontal == 0) {
             playingSound = false;
             FindObjectOfType<AudioManager>().Loop("walk", false);
@@ -54,6 +55,8 @@ public class Controller : MonoBehaviour {
 
     // Handles walking left or right
     void HandleMovement(float move) {
+
+        // Sets walk sound to loop and plays it
         if (move != 0 && grounded && !playingSound) {
             FindObjectOfType<AudioManager>().Loop("walk", true);
             FindObjectOfType<AudioManager>().Play("walk");
