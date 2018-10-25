@@ -25,6 +25,7 @@ public class Movement : MonoBehaviour {
 
     public static bool tel;
     private float teleportRange = 250;
+    private bool playingJetSound;
 
    
     private float flyForce = 100f;
@@ -76,12 +77,16 @@ public class Movement : MonoBehaviour {
 
         if (Input.GetButton("Jump" + wPlayer) && fuel > 0 && player.position.y <= 10)
         {
-           
-            flames.GetComponent<ParticleSystem>().enableEmission = true;
-          
-            FindObjectOfType<AudioManager>().Play("Jetpack"); // plays laser sound
-        
+
+            if (!playingJetSound)
+            {
+                FindObjectOfType<AudioManager>().Loop("Jetpack", true);
+                FindObjectOfType<AudioManager>().Play("Jetpack");
+                playingJetSound = true;
+            }
+            flames.GetComponent<ParticleSystem>().enableEmission = true;       
             flames.position = new Vector2(player.position.x - 0, player.position.y + 1.5f);
+
             if (jump == true)
             {
                 rb.AddForce(new Vector2(0, jumpforce));
@@ -96,7 +101,10 @@ public class Movement : MonoBehaviour {
         }
         else
         {
+            playingJetSound = false;
+            FindObjectOfType<AudioManager>().Loop("Jetpack", false);
             flames.GetComponent<ParticleSystem>().enableEmission = false;
+       
         }
     }
         void OnCollisionEnter2D(Collision2D col) // check collision
