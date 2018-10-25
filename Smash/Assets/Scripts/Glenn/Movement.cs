@@ -113,6 +113,7 @@ public class Movement : MonoBehaviour {
         if (col.collider.tag == "Ground")
         {
             isGrounded = false;
+
         }
     }
 

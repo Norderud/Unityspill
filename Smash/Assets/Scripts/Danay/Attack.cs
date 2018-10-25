@@ -48,6 +48,7 @@ public class Attack : MonoBehaviour {
                 case ("Glenn"):
                     collision.collider.gameObject.GetComponent<Movement>().enabled = false;
                     collision.collider.gameObject.GetComponent<Stats>().TakeDmg(10);
+                    collision.collider.GetComponent<Stats>().knockedLeft = true;
                     break;
             }
             collision.collider.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(force*direction, force*10));
@@ -56,7 +57,7 @@ public class Attack : MonoBehaviour {
 
     public void Attacking() {
         if (hasAttacked < 3) { // Attack
-            FindObjectOfType<AudioManager>().Play("hit" + (hasAttacked+1));
+ //           FindObjectOfType<AudioManager>().Play("hit" + (hasAttacked+1));
             hitBox.GetComponent<BoxCollider2D>().enabled = true;
             hasAttacked++;
             attackStart = Time.time;

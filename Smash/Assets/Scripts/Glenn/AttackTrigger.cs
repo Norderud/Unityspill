@@ -23,6 +23,7 @@ public class AttackTrigger : MonoBehaviour {
                     {
                         c.collider.GetComponent<Controller>().enabled = false;//  sets Danays movementscript to false
                         c.collider.GetComponent<Danay_Input>().enabled = false;//  sets Danays movementscript to false
+                        c.collider.GetComponent<Stats>().knockedRight = true;
 
                     }
                     else if (c.collider.tag == "Åsmund")
@@ -39,6 +40,7 @@ public class AttackTrigger : MonoBehaviour {
                     {
                         c.collider.GetComponent<Controller>().enabled = false; // sets Danays movementscript to false
                         c.collider.GetComponent<Danay_Input>().enabled = false;//  sets Danays movementscript to false
+                        c.collider.GetComponent<Stats>().knockedLeft = true;
 
                     }
                     else if (c.collider.tag == "Åsmund")
