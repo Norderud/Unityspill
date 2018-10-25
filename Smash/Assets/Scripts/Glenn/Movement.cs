@@ -21,6 +21,7 @@ public class Movement : MonoBehaviour {
     private float jumpforce = 1000;
     private bool jump = true;
     private bool isGrounded = true;
+    private float soundCooldown = 2;
 
     public static bool tel;
     private float teleportRange = 250;
@@ -73,9 +74,13 @@ public class Movement : MonoBehaviour {
 
     private void Jump() {
 
-        if (Input.GetButton("Jump"+ wPlayer) && fuel > 0 && player.position.y <= 10)
+        if (Input.GetButton("Jump" + wPlayer) && fuel > 0 && player.position.y <= 10)
         {
+           
             flames.GetComponent<ParticleSystem>().enableEmission = true;
+          
+            FindObjectOfType<AudioManager>().Play("Jetpack"); // plays laser sound
+        
             flames.position = new Vector2(player.position.x - 0, player.position.y + 1.5f);
             if (jump == true)
             {
