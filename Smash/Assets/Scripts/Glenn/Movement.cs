@@ -26,6 +26,7 @@ public class Movement : MonoBehaviour {
     public static bool tel;
     private float teleportRange = 250;
     private bool playingJetSound;
+    private bool moveSound;
 
    
     private float flyForce = 100f;
@@ -51,7 +52,19 @@ public class Movement : MonoBehaviour {
     {
         float horizontal = Input.GetAxis("Horizontal"+ wPlayer);
 
-        
+        if (horizontal != 0 && isGrounded && !moveSound)
+        {
+            FindObjectOfType<AudioManager>().Loop("walk", true);
+            FindObjectOfType<AudioManager>().Play("walk");
+            moveSound = true;
+        }
+        if (!isGrounded || horizontal == 0)
+        {
+            moveSound = false;
+            FindObjectOfType<AudioManager>().Loop("walk", false);
+        }
+
+
         rb.velocity = new Vector2(horizontal * moveSpeed, rb.velocity.y);
 
         if (horizontal < 0)
