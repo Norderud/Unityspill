@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Random;
+using System;
 
 public class Stats : MonoBehaviour {
 
@@ -34,9 +34,11 @@ public class Stats : MonoBehaviour {
         isHit = true;
         if (gameObject.tag == "Glenn")
         {
-            Random rnd = new Random();
-         
-            string[] sound = {"Dmg", "Dmg2", "Dmg3"};            FindObjectOfType<AudioManager>().Play("Dmg");
+            System.Random rnd = new System.Random();
+            int s = rnd.Next(0,3);
+                    
+            string[] sound = {"Dmg", "Dmg2", "Dmg3"};
+            FindObjectOfType<AudioManager>().Play(sound[s]);
         }
     }
 
