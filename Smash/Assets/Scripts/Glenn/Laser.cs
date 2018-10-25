@@ -30,7 +30,7 @@ public class Laser : MonoBehaviour {
     {
         if ( collision.collider.tag != "Glenn")
         {
-            GameObject myDashEffect = Instantiate(smoke, rb.transform.position, Quaternion.identity) as GameObject;  // adds smoke when laser hit        
+            GameObject mySmoke = Instantiate(smoke, rb.transform.position, Quaternion.identity) as GameObject;  // adds smoke when laser hit        
             Destroy(gameObject, 0f);
             if (collision.collider.GetComponent<Stats>() != null)
             {
