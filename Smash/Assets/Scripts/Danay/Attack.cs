@@ -56,7 +56,7 @@ public class Attack : MonoBehaviour {
                     bloodEffect.transform.parent = collision.GetComponent<Rigidbody2D>().transform;
                     FindObjectOfType<AudioManager>().Play("bam");
                     FindObjectOfType<AudioManager>().Play("splatt");
-                    Time.timeScale = 0;
+                    Time.timeScale = 0.5f;
                     hasHit = true;
                     break;
                 case ("Glenn"):
