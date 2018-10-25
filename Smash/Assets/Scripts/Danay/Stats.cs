@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Random;
 
 public class Stats : MonoBehaviour {
 
@@ -11,8 +12,9 @@ public class Stats : MonoBehaviour {
     private float startTime;
     private float duration = 0.7f;
 
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start () {
      
 	}
 
@@ -33,8 +35,16 @@ public class Stats : MonoBehaviour {
         health -= dmg;
         startTime = Time.time;
         isHit = true;
+<<<<<<< HEAD
         if (gameObject.tag == "Glenn") {
             FindObjectOfType<AudioManager>().Play("Dmg");
+=======
+        if (gameObject.tag == "Glenn")
+        {
+            Random rnd = new Random();
+         
+            string[] sound = {"Dmg", "Dmg2", "Dmg3"};            FindObjectOfType<AudioManager>().Play("Dmg");
+>>>>>>> a25fa08cc21f20685872866336a932c8b28c3321
         }
     }
 

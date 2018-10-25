@@ -23,12 +23,14 @@ public class AttackTrigger : MonoBehaviour {
                     {
                         c.collider.GetComponent<Controller>().enabled = false;//  sets Danays movementscript to false
                         c.collider.GetComponent<Danay_Input>().enabled = false;//  sets Danays movementscript to false
-                       
+                        c.collider.GetComponent<Stats>().TakeDmg(10);
+
 
                     }
                     else if (c.collider.tag == "Åsmund")
                     {
                         c.collider.GetComponent<Player_Controller>().enabled = false; // sets åsmunds movementscript to false
+                        c.collider.GetComponent<Stats>().TakeDmg(10);
                     }                  
                 }
 
@@ -40,11 +42,12 @@ public class AttackTrigger : MonoBehaviour {
                     {
                         c.collider.GetComponent<Controller>().enabled = false; // sets Danays movementscript to false
                         c.collider.GetComponent<Danay_Input>().enabled = false;//  sets Danays movementscript to false
-            
+                        c.collider.GetComponent<Stats>().TakeDmg(10);
 
                     }
                     else if (c.collider.tag == "Åsmund")
                     {
+                        c.collider.GetComponent<Stats>().TakeDmg(10);
                         c.collider.GetComponent<Player_Controller>().enabled = false; // sets åsmunds movementscript to false
                     }
 
