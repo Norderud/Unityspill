@@ -30,6 +30,10 @@ public class Stats : MonoBehaviour {
         health -= dmg;
         startTime = Time.time;
         isHit = true;
+        if (gameObject.tag == "Glenn")
+        {
+            FindObjectOfType<AudioManager>().Play("Dmg");
+        }
     }
 
    
