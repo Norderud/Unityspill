@@ -54,14 +54,14 @@ public class Movement : MonoBehaviour {
 
         if (horizontal != 0 && isGrounded && !moveSound)
         {
-            FindObjectOfType<AudioManager>().Loop("Walk", true);
-            FindObjectOfType<AudioManager>().Play("Walk");
+            FindObjectOfType<AudioManager>().Loop("walk", true);
+            FindObjectOfType<AudioManager>().Play("walk");
             moveSound = true;
         }
         if (!isGrounded || horizontal == 0)
         {
             moveSound = false;
-            FindObjectOfType<AudioManager>().Loop("Walk", false);
+            FindObjectOfType<AudioManager>().Loop("walk", false);
         }
 
 
