@@ -38,6 +38,7 @@ public class Dash : MonoBehaviour {
                 isDashing = true;
                 hasDashed = true;
                 animator.SetBool("IsDashing", true);    // dash animation
+                FindObjectOfType<AudioManager>().Play("dash");  // Plays dash sound
                 rb.GetComponent<Danay_Input>().enabled = false;   // disables user input while dashing
                 Vector2 dashLocation = new Vector2(rb.position.x, rb.position.y - 2);   // Location for dasheffect
                 GameObject myDashEffect = Instantiate(dashEffect, dashLocation, Quaternion.identity); // Instantiates a dash effect using prefab

@@ -9,6 +9,7 @@ public class Stats : MonoBehaviour {
     public bool dead = false;
   
 
+<<<<<<< HEAD
 	// Use this for initialization
 	void Start () {
      
@@ -19,6 +20,12 @@ public class Stats : MonoBehaviour {
     {
         if (health <= 0)
         {
+=======
+	
+	// Update is called once per frame
+	void Update () {
+        if (health <= 0) {
+>>>>>>> 58162a71cdc2d0d0faae5d8777f824d7efed6b99
             dead = true;
         }
     }
