@@ -73,7 +73,7 @@ public class Controller : MonoBehaviour {
             rb.velocity = new Vector2(rb.velocity.x, 0f);   // Sets the velocity for the jump
             rb.AddForce(new Vector2(0f, m_jump));
             if (hasAirJumped > 1) {
-                FindObjectOfType<AudioManager>().Play("dJump");
+                FindObjectOfType<AudioManager>().Play("dJump");   //DÅRLIG LYD
                 Vector2 jumpEffectLocation = new Vector2(rb.position.x, rb.position.y - 2);   // Location for jump effect
                 GameObject myJumpEffect = Instantiate(doubleJumpEffect, jumpEffectLocation, Quaternion.identity) as GameObject;
                 myJumpEffect.transform.parent = rb.transform; // Sets the jump effect as players child

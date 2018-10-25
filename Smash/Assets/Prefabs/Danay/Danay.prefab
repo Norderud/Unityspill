@@ -553,6 +553,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   dead: 0
+  isHit: 0
 --- !u!114 &114701107957036304
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -580,7 +581,7 @@ MonoBehaviour:
   rb: {fileID: 50872760314585576}
   animator: {fileID: 95544805250821844}
   sprite: {fileID: 212760621392810900}
-  doubleJumpEffect: {fileID: 1923503539022624, guid: 034c9870130ffb34b900d77b630bdd59,
+  doubleJumpEffect: {fileID: 1820831371672030, guid: 9920542057f8de440ab50bd67e81f0c6,
     type: 2}
   attack: {fileID: 114999440104166436}
   m_speed: 1200

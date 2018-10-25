@@ -541,6 +541,16 @@ MonoBehaviour:
     volume: 0.52
     pitch: 0.99
     source: {fileID: 0}
+  - name: dJump
+    clip: {fileID: 8300000, guid: 4431ced57bddafa4f826841f2e95775c, type: 3}
+    volume: 0.025
+    pitch: 0.89
+    source: {fileID: 0}
+  - name: Jetpack
+    clip: {fileID: 8300000, guid: 79fa0652367954d4687118236d9a61ca, type: 3}
+    volume: 0.52
+    pitch: 0.99
+    source: {fileID: 0}
 --- !u!4 &859102340
 Transform:
   m_ObjectHideFlags: 0
