@@ -19,6 +19,7 @@ public class checkController : MonoBehaviour {
                 timer = 50f;
             }
         }
+        
     }
 }
 

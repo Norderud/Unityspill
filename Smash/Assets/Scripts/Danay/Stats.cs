@@ -22,16 +22,18 @@ public class Stats : MonoBehaviour {
         if (health <= 0) {
             dead = true;
         }
-        if (isHit && Time.time - startTime > duration)
+        if (isHit && Time.time - startTime > duration) {
             isHit = false;
+            startTime = 0;
+        }
+        gameObject.GetComponent<Animator>().SetBool("IsHit", isHit);
     }
 
     public void TakeDmg(int dmg) {
         health -= dmg;
         startTime = Time.time;
         isHit = true;
-        if (gameObject.tag == "Glenn")
-        {
+        if (gameObject.tag == "Glenn") {
             FindObjectOfType<AudioManager>().Play("Dmg");
         }
     }
