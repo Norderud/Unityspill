@@ -1870,6 +1870,21 @@ MonoBehaviour:
     volume: 1
     pitch: 1.09
     source: {fileID: 0}
+  - name: Walk
+    clip: {fileID: 8300000, guid: 597abb1856c116141ba4287596481ded, type: 3}
+    volume: 1
+    pitch: 1.09
+    source: {fileID: 0}
+  - name: Dmg2
+    clip: {fileID: 8300000, guid: 45cf5b205c1941c4897655d8b2b7e620, type: 3}
+    volume: 1
+    pitch: 1.09
+    source: {fileID: 0}
+  - name: Dmg3
+    clip: {fileID: 8300000, guid: f989ade1568172647a704e39c4681b88, type: 3}
+    volume: 1
+    pitch: 1.09
+    source: {fileID: 0}
 --- !u!4 &1111662593
 Transform:
   m_ObjectHideFlags: 0
