@@ -24,6 +24,8 @@ public class Controller : MonoBehaviour {
     private int hasAirJumped = 0;   // 0 = grounded / 1 = in the air / 2 = has air jumped
     public float horizontal = 0;   // Detects if player is moving left/right. -1 is left, 1 is right
 
+    private bool playingSound;
+
     private void Update() {
 
         if (horizontal < 0) {   // Player is facing left
@@ -38,6 +40,11 @@ public class Controller : MonoBehaviour {
             face = false;   // Changes the players direction to right
             sprite.flipX = face;
         }
+
+        if(!grounded || horizontal == 0) {
+            playingSound = false;
+            FindObjectOfType<AudioManager>().Loop("walk", false);
+        }
     }
 
     // Update is called once per frame
@@ -47,8 +54,10 @@ public class Controller : MonoBehaviour {
 
     // Handles walking left or right
     void HandleMovement(float move) {
-        if (move != 0 && grounded) {
+        if (move != 0 && grounded && !playingSound) {
+            FindObjectOfType<AudioManager>().Loop("walk", true);
             FindObjectOfType<AudioManager>().Play("walk");
+            playingSound = true;
         }
         animator.SetFloat("JumpSpeed", rb.velocity.y); // Tells the animator if the player is jumping up or falling down
         animator.SetFloat("Speed", Mathf.Abs(move));    // Animates if player is moving
@@ -64,6 +73,7 @@ public class Controller : MonoBehaviour {
             rb.velocity = new Vector2(rb.velocity.x, 0f);   // Sets the velocity for the jump
             rb.AddForce(new Vector2(0f, m_jump));
             if (hasAirJumped > 1) {
+                FindObjectOfType<AudioManager>().Play("dJump");
                 Vector2 jumpEffectLocation = new Vector2(rb.position.x, rb.position.y - 2);   // Location for jump effect
                 GameObject myJumpEffect = Instantiate(doubleJumpEffect, jumpEffectLocation, Quaternion.identity) as GameObject;
                 myJumpEffect.transform.parent = rb.transform; // Sets the jump effect as players child
