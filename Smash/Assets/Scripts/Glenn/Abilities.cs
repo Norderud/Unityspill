@@ -81,6 +81,7 @@ public class Abilities : MonoBehaviour {
             ani.SetBool("Jump", false);
             nextFire = Time.time + fireRate;           
             laserPos = player.position;
+            FindObjectOfType<AudioManager>().Play("Laser");
             if (sprite.flipX == true)
             {
                 laserL.GetComponent<SpriteRenderer>().flipX = true;
