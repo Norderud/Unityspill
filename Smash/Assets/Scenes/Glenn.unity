@@ -1855,6 +1855,11 @@ MonoBehaviour:
     volume: 1
     pitch: 1.01
     source: {fileID: 0}
+  - name: Jetpack
+    clip: {fileID: 8300000, guid: 79fa0652367954d4687118236d9a61ca, type: 3}
+    volume: 1
+    pitch: 1.09
+    source: {fileID: 0}
 --- !u!4 &1111662593
 Transform:
   m_ObjectHideFlags: 0
