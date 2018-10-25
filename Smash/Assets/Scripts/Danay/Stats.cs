@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
+
 public class Stats : MonoBehaviour {
 
     public int health = 100;
@@ -24,23 +25,30 @@ public class Stats : MonoBehaviour {
         if (health <= 0) {
             dead = true;
         }
-        if (isHit && Time.time - startTime > duration)
+        if (isHit && Time.time - startTime > duration) {
             isHit = false;
+            startTime = 0;
+        }
+        if (gameObject.tag == "Danay")
+            gameObject.GetComponent<Animator>().SetBool("IsHit", isHit);
     }
 
     public void TakeDmg(int dmg) {
         health -= dmg;
         startTime = Time.time;
-        isHit = true;
+        if (dmg > 5)
+            isHit = true;
         if (gameObject.tag == "Glenn")
         {
             System.Random rnd = new System.Random();
+<<<<<<< HEAD
             int s = rnd.Next(0,3);                    
+=======
+            int s = rnd.Next(0,3);
+>>>>>>> eb61ed29bd3f8f1f10aa92729f1a547b046bc336
             string[] sound = {"Dmg", "Dmg2", "Dmg3"};
             FindObjectOfType<AudioManager>().Play(sound[s]);
+
         }
     }
-
-   
-
 }

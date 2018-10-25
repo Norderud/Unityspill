@@ -8,7 +8,7 @@ public class Dash : MonoBehaviour {
     public Controller controls;
     public Animator animator;
 
-    public float coolDown = 4;  // Determines how long the cooldown is
+    public float coolDown;  // Determines how long the cooldown is
     private float coolDownTimer = 0; // Used to time cooldowns
     private float dashTime;     // Determines how long the dash will last
     public float startDashTime; // Determines how long the dash will last
@@ -23,6 +23,8 @@ public class Dash : MonoBehaviour {
     // Use this for initialization
     void Start () {
         dashTime = startDashTime;
+        dashSpeed = 180;
+        controls.enabled = true;
 	}
 
     // Update is called once per frame
