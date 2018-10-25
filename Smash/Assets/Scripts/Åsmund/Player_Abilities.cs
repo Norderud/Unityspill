@@ -8,6 +8,7 @@ public class Player_Abilities : MonoBehaviour
     public float speed = 3000f;
     public float cooldown = 1f;
     public Kick kick;
+    public Smash smash;
 
     private float tTime = 0f;
     private int facing = 1;
@@ -36,7 +37,7 @@ public class Player_Abilities : MonoBehaviour
         }
         if(Input.GetButtonDown("Fire3" + wPlayer))
         {
-            smash();
+            smashAttack();
         }
     }
 
@@ -54,9 +55,11 @@ public class Player_Abilities : MonoBehaviour
         kick.kick();
         player.anim.SetBool("attack", true);
     }
-    public void smash()
+    public void smashAttack()
     {
         player.anim.SetBool("smash", true);
+        smash.smash();
+
     }
     private void resetValues()
     {

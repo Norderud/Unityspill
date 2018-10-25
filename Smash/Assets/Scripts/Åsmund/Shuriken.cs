@@ -16,11 +16,18 @@ public class Shuriken : MonoBehaviour {
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.tag == "Ground" || collision.collider.tag == "Shuriken") return;
-        if(collision.collider.tag != "Åsmund")
+        if (collision.collider.tag == "Ground" || collision.collider.tag == "Shuriken" || collision.collider.tag == "Åsmund") return;
+        switch (collision.collider.tag)
         {
-            Destroy(Instantiate(blood, gameObject.transform.position, Quaternion.identity), 1f);
-            Destroy(gameObject, 0);
+            case ("Danay"):
+                collision.collider.gameObject.GetComponent<Stats>().TakeDmg(5);
+                break;
+            case ("Glenn"):
+                collision.collider.gameObject.GetComponent<Stats>().TakeDmg(5);
+                break;
         }
+        Destroy(Instantiate(blood, gameObject.transform.position, Quaternion.identity), 1f);
+        Destroy(gameObject, 0);
+       
     }
 }
