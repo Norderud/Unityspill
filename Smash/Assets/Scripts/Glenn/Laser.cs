@@ -31,8 +31,8 @@ public class Laser : MonoBehaviour {
         if ( collision.collider.tag != "Glenn")
         {
             GameObject mySmoke = Instantiate(smoke, rb.transform.position, Quaternion.identity) as GameObject;  // adds smoke when laser hit        
-            Destroy(gameObject, 0f);
-            FindObjectOfType<AudioManager>().Play("LaserHit");
+            Destroy(gameObject, 0f); 
+            FindObjectOfType<AudioManager>().Play("LaserHit"); // plays laset sound when hit
             if (collision.collider.GetComponent<Stats>() != null)
             {
                 collision.collider.GetComponent<Stats>().TakeDmg(5); // add damage to enemy                 

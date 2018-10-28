@@ -1672,11 +1672,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4914819516686166, guid: 4dfd54604c87ecd4185d7298aac001f4, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -9.08
+      value: -9.03
       objectReference: {fileID: 0}
     - target: {fileID: 4914819516686166, guid: 4dfd54604c87ecd4185d7298aac001f4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.51
+      value: -1.32
       objectReference: {fileID: 0}
     - target: {fileID: 4914819516686166, guid: 4dfd54604c87ecd4185d7298aac001f4, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1701,6 +1701,16 @@ Prefab:
     - target: {fileID: 4914819516686166, guid: 4dfd54604c87ecd4185d7298aac001f4, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 70200588070696808, guid: 4dfd54604c87ecd4185d7298aac001f4,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 0.008039951
+      objectReference: {fileID: 0}
+    - target: {fileID: 70200588070696808, guid: 4dfd54604c87ecd4185d7298aac001f4,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.8100006
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4dfd54604c87ecd4185d7298aac001f4, type: 2}
@@ -1870,7 +1880,7 @@ MonoBehaviour:
     volume: 1
     pitch: 1.09
     source: {fileID: 0}
-  - name: Walk
+  - name: walk
     clip: {fileID: 8300000, guid: 597abb1856c116141ba4287596481ded, type: 3}
     volume: 1
     pitch: 1.09
@@ -1882,6 +1892,16 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Dmg3
     clip: {fileID: 8300000, guid: f989ade1568172647a704e39c4681b88, type: 3}
+    volume: 1
+    pitch: 1.09
+    source: {fileID: 0}
+  - name: LaserHit
+    clip: {fileID: 8300000, guid: 5d716f7bcef5443439f8c9e41b9fd3cd, type: 3}
+    volume: 1
+    pitch: 1.09
+    source: {fileID: 0}
+  - name: Hit
+    clip: {fileID: 8300000, guid: 1fde2a180018e3f4b9fdbe2d2b2a84cc, type: 3}
     volume: 1
     pitch: 1.09
     source: {fileID: 0}
