@@ -29,7 +29,7 @@ public class Stats : MonoBehaviour {
             isHit = false;
             startTime = 0;
         }
-        if (gameObject.tag == "Danay")
+        if (gameObject.tag == "Danay" || gameObject.tag == "Glenn")
             gameObject.GetComponent<Animator>().SetBool("IsHit", isHit);
     }
 
@@ -44,7 +44,6 @@ public class Stats : MonoBehaviour {
             int s = rnd.Next(0,3);                    
             string[] sound = {"Dmg", "Dmg2", "Dmg3"};
             FindObjectOfType<AudioManager>().Play(sound[s]);
-
         }
     }
 }

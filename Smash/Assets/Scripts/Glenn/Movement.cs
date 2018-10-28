@@ -146,7 +146,7 @@ public class Movement : MonoBehaviour {
 
     private void Teleport()
     {
-     
+   
         if (Input.GetButtonDown("Fire3"+ wPlayer) &&  isGrounded )
         {
             if (sprite.flipX == false)
