@@ -49,7 +49,7 @@ public class Movement : MonoBehaviour {
         
         Jump();
         Move();
-        Teleport();
+        Teleport();       
     }
 
     
@@ -171,6 +171,7 @@ public class Movement : MonoBehaviour {
         }
         
     }
+    
 }
 
 
