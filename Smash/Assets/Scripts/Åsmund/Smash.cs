@@ -6,6 +6,7 @@ public class Smash : MonoBehaviour {
     public GameObject smash_ground;
     public Collider2D col;
     public float smashDuration;
+    public Player_Controller player;
 
     private float smashStart;
 
@@ -21,8 +22,11 @@ public class Smash : MonoBehaviour {
 	}
     public void smash()
     {
-        smashStart = Time.time;
-        col.enabled = true;
+        if(player.inAir == false)
+        {
+            smashStart = Time.time;
+            col.enabled = true;
+        }
         //Destroy(Instantiate(smash_ground, gameObject.transform.position, Quaternion.identity), 1f);
 
     }
