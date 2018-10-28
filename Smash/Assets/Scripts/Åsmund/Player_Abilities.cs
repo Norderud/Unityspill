@@ -6,7 +6,7 @@ public class Player_Abilities : MonoBehaviour
     public GameObject bullet;
     public Player_Controller player;
     public float speed = 3000f;
-    public float cooldown = 1f;
+    public float cooldown;
     public Kick kick;
     public Smash smash;
 
@@ -51,15 +51,19 @@ public class Player_Abilities : MonoBehaviour
     }
     public void attack()
     {
+        if (tTime > Time.time) return;
         kick.moveCollider(facing);
         kick.kick();
         player.anim.SetBool("attack", true);
+        tTime = Time.time + cooldown;
     }
     public void smashAttack()
     {
+        if (tTime > Time.time) return;
         player.anim.SetBool("smash", true);
         player.stopInAir();
         smash.smash();
+        tTime = Time.time + cooldown;
 
     }
     private void resetValues()

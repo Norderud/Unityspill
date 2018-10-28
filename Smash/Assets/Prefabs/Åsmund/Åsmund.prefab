@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4924880041356818}
   - component: {fileID: 212786203518334376}
   - component: {fileID: 114754295506122810}
-  - component: {fileID: 60548569936144860}
+  - component: {fileID: 70712476428443960}
   m_Layer: 0
   m_Name: smash
   m_TagString: Untagged
@@ -76,7 +76,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1721220877765840}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.68, y: 6.18, z: 0}
+  m_LocalPosition: {x: -4.71, y: 6.37, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 4898910851752542}
@@ -130,36 +130,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!60 &60548569936144860
-PolygonCollider2D:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1234751179574464}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.29408312, y: -0.24168393}
-      - {x: -3.6304786, y: -0.11576888}
-      - {x: 0.24880695, y: -2.012164}
-      - {x: 4.7584352, y: -0.016486645}
-      - {x: 4.6730137, y: -0.016486645}
-      - {x: 0.65697336, y: -0.24647328}
 --- !u!61 &61761894071990408
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -185,6 +155,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.7771826, y: 3.173152}
   m_EdgeRadius: 0
+--- !u!70 &70712476428443960
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1234751179574464}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.16329475, y: -0.48739776}
+  m_Size: {x: 8.20764, y: 2.7766855}
+  m_Direction: 1
 --- !u!70 &70952330466319070
 CapsuleCollider2D:
   m_ObjectHideFlags: 1
@@ -250,6 +235,8 @@ MonoBehaviour:
   anim: {fileID: 95094106016530176}
   sprite: {fileID: 212528801024843808}
   kick: {fileID: 61761894071990408}
+  inAir: 0
+  isSmashing: 0
   player: 
 --- !u!114 &114447911700796014
 MonoBehaviour:
@@ -293,9 +280,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 565c2b1e3d3285349abb2dce167c0e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smash_ground: {fileID: 0}
-  col: {fileID: 60548569936144860}
+  col: {fileID: 70712476428443960}
   smashDuration: 0.2
+  player: {fileID: 114361795137600058}
+  force: 150
 --- !u!212 &212528801024843808
 SpriteRenderer:
   m_ObjectHideFlags: 1

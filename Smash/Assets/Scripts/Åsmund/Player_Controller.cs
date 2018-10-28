@@ -6,6 +6,7 @@ public class Player_Controller : MonoBehaviour {
     private bool jump, pointUp;
     private int airJumped = 0;
     private float velocity;
+    
 
     public float horizontal;
     public Rigidbody2D rb;
@@ -15,6 +16,8 @@ public class Player_Controller : MonoBehaviour {
     public SpriteRenderer sprite;
     public Collider2D kick;
     public bool inAir;
+    public bool isSmashing;
+
 
     public string player;           // Reference to if the character is player1 or player2
 
@@ -72,7 +75,9 @@ public class Player_Controller : MonoBehaviour {
     }
     public void stopInAir()
     {
-        rb.velocity = new Vector2(0, -50);
+        isSmashing = true;
+        if (inAir)
+            rb.velocity = new Vector2(0, -30);
     }
     // For detecting when on ground and not
     private void OnCollisionExit2D(Collision2D collision)
