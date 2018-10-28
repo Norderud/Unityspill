@@ -10,6 +10,7 @@ public class Movement : MonoBehaviour {
     private Rigidbody2D rb;
     public Animator ani;
     public Transform flames;
+    public GameObject teleSmoke;
    
 
     private int face;
@@ -24,6 +25,10 @@ public class Movement : MonoBehaviour {
     private float soundCooldown = 2;
 
     public static bool tel;
+    private float nextTeleport = 0f;
+    private float telCooldown = 0.4f;
+    
+
     private float teleportRange = 250;
     private bool playingJetSound;
     private bool moveSound;
@@ -139,27 +144,32 @@ public class Movement : MonoBehaviour {
         if (col.collider.tag == "Ground")
         {
             isGrounded = false;
-
         }
     }
 
 
     private void Teleport()
     {
-   
-        if (Input.GetButtonDown("Fire3"+ wPlayer) &&  isGrounded )
+    
+        if (Input.GetButtonUp("Fire3"+ wPlayer) &&  Time.time > nextTeleport )
         {
+            GameObject mySmoke = Instantiate( teleSmoke, rb.transform.position, Quaternion.identity) as GameObject;
+            nextTeleport = Time.time + telCooldown;
+            FindObjectOfType<AudioManager>().Play("Teleport");
+
             if (sprite.flipX == false)
             {
-                rb.velocity = Vector2.right * teleportRange;
+                rb.velocity = Vector2.right * teleportRange;             
                 tel = false;
             }
             else
             {
-                rb.velocity = Vector2.left * teleportRange;
+                rb.velocity = Vector2.left * teleportRange;              
                 tel = false;
             }
+            mySmoke = Instantiate(teleSmoke, rb.transform.position, Quaternion.identity) as GameObject;
         }
+        
     }
 }
 

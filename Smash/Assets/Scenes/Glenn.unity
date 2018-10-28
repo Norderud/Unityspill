@@ -1712,6 +1712,12 @@ Prefab:
       propertyPath: m_Size.y
       value: 0.8100006
       objectReference: {fileID: 0}
+    - target: {fileID: 114597938585363720, guid: 4dfd54604c87ecd4185d7298aac001f4,
+        type: 2}
+      propertyPath: teleSmoke
+      value: 
+      objectReference: {fileID: 1612693756828252, guid: 15ac37d355d0f3a48bfe2aa07778d40d,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4dfd54604c87ecd4185d7298aac001f4, type: 2}
   m_IsPrefabAsset: 0
@@ -1902,6 +1908,11 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Hit
     clip: {fileID: 8300000, guid: 1fde2a180018e3f4b9fdbe2d2b2a84cc, type: 3}
+    volume: 1
+    pitch: 1.09
+    source: {fileID: 0}
+  - name: Teleport
+    clip: {fileID: 8300000, guid: 79a51588258bf7842aedf887d8b73617, type: 3}
     volume: 1
     pitch: 1.09
     source: {fileID: 0}
