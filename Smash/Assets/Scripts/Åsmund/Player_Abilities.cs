@@ -58,6 +58,7 @@ public class Player_Abilities : MonoBehaviour
     public void smashAttack()
     {
         player.anim.SetBool("smash", true);
+        player.stopInAir();
         smash.smash();
 
     }

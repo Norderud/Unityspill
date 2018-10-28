@@ -41,7 +41,6 @@ public class Stats : MonoBehaviour {
         if (gameObject.tag == "Glenn")
         {
             System.Random rnd = new System.Random();
-
             int s = rnd.Next(0,3);                    
             string[] sound = {"Dmg", "Dmg2", "Dmg3"};
             FindObjectOfType<AudioManager>().Play(sound[s]);

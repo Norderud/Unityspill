@@ -14,6 +14,7 @@ public class Player_Controller : MonoBehaviour {
     public Animator anim;
     public SpriteRenderer sprite;
     public Collider2D kick;
+    public bool inAir;
 
     public string player;           // Reference to if the character is player1 or player2
 
@@ -69,9 +70,14 @@ public class Player_Controller : MonoBehaviour {
             sprite.flipX = false;
         }
     }
+    public void stopInAir()
+    {
+        rb.velocity = new Vector2(0, -50);
+    }
     // For detecting when on ground and not
     private void OnCollisionExit2D(Collision2D collision)
     {
+        inAir = true;
         if (collision.gameObject.tag == "Ground")
         {
             anim.SetBool("grounded", false);
@@ -79,6 +85,7 @@ public class Player_Controller : MonoBehaviour {
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        inAir = false;
         if (collision.gameObject.tag == "Ground")
         {
             airJumped = 0;
