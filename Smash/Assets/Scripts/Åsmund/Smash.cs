@@ -31,29 +31,29 @@ public class Smash : MonoBehaviour {
         //Destroy(Instantiate(smash_ground, gameObject.transform.position, Quaternion.identity), 1f);
 
     }
-    public void OnCollisionEnter2D(Collision2D collision)
+    public void OnTriggerEnter2D(Collider2D col)
     {
-        if (collision.collider.GetComponent<Rigidbody2D>().transform.position.x < player.transform.position.x)
+        if (col.GetComponent<Rigidbody2D>().transform.position.x < player.transform.position.x)
             facing = -1;
         else
             facing = 1;
         Debug.Log(facing);
 
-        if (collision.collider.tag != "Åsmund")
+        if (col.tag != "Åsmund")
         {
-            switch (collision.collider.tag)
+            switch (col.tag)
             {
                 case ("Danay"):
-                    collision.collider.gameObject.GetComponent<Controller>().enabled = false;
-                    collision.collider.gameObject.GetComponent<Danay_Input>().enabled = false;
-                    collision.collider.gameObject.GetComponent<Stats>().TakeDmg(20);
+                    col.gameObject.GetComponent<Controller>().enabled = false;
+                    col.gameObject.GetComponent<Danay_Input>().enabled = false;
+                    col.gameObject.GetComponent<Stats>().TakeDmg(20);
                     break;
                 case ("Glenn"):
-                    collision.collider.gameObject.GetComponent<Movement>().enabled = false;
-                    collision.collider.gameObject.GetComponent<Stats>().TakeDmg(20);
+                    col.gameObject.GetComponent<Movement>().enabled = false;
+                    col.gameObject.GetComponent<Stats>().TakeDmg(20);
                     break;
             }
-            collision.collider.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(force * facing, force * 5
+            col.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(force * 3 * facing, force * 5
                 ));
         }
     }

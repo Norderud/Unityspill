@@ -44,23 +44,24 @@ public class Kick : MonoBehaviour {
             }
         }
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTrigger2D(Collider2D col)
     {
-        if (collision.collider.tag != "Åsmund")
+        if (col.tag != "Åsmund")
         {
-            switch (collision.collider.tag)
+            Debug.Log("treff");
+            switch (col.tag)
             {
                 case ("Danay"):
-                    collision.collider.gameObject.GetComponent<Controller>().enabled = false;
-                    collision.collider.gameObject.GetComponent<Danay_Input>().enabled = false;
-                    collision.collider.gameObject.GetComponent<Stats>().TakeDmg(10);
+                    col.gameObject.GetComponent<Controller>().enabled = false;
+                    col.gameObject.GetComponent<Danay_Input>().enabled = false;
+                    col.gameObject.GetComponent<Stats>().TakeDmg(10);
                     break;
                 case ("Glenn"):
-                    collision.collider.gameObject.GetComponent<Movement>().enabled = false;
-                    collision.collider.gameObject.GetComponent<Stats>().TakeDmg(10);
+                    col.gameObject.GetComponent<Movement>().enabled = false;
+                    col.gameObject.GetComponent<Stats>().TakeDmg(10);
                     break;
             }
-            collision.collider.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(force * facing, force * 10));
+            col.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(force * facing, force * 10));
         }
     }
 }
