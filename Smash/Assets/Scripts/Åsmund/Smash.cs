@@ -46,11 +46,11 @@ public class Smash : MonoBehaviour {
                 case ("Danay"):
                     col.gameObject.GetComponent<Controller>().enabled = false;
                     col.gameObject.GetComponent<Danay_Input>().enabled = false;
-                    col.gameObject.GetComponent<Stats>().TakeDmg(20);
+                    col.gameObject.GetComponent<Stats>().TakeDmg(10);
                     break;
                 case ("Glenn"):
                     col.gameObject.GetComponent<Movement>().enabled = false;
-                    col.gameObject.GetComponent<Stats>().TakeDmg(20);
+                    col.gameObject.GetComponent<Stats>().TakeDmg(10);
                     break;
             }
             col.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(force * 3 * facing, force * 5

@@ -44,7 +44,7 @@ public class Kick : MonoBehaviour {
             }
         }
     }
-    private void OnTrigger2D(Collider2D col)
+    private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.tag != "Åsmund")
         {
